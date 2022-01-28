@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<title>Tools2C - leren door zien</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/mvboli.css">
+<link rel="stylesheet" href="css/all.css"> <!-- font awesome -->
+<link rel="stylesheet" href="css/tools2c.css">
+<!-- <script src="https://kit.fontawesome.com/b92078da0c.js" crossorigin="anonymous"></script> -->
+<!-- <script src="b92078da0c.js" crossorigin="anonymous"></script> -->
+<body>
+
+<!-- Logo & navigatie -->
+<div class="w3-top w3-hide w3-show" style="position: absolute" id="navbarcont">
+  <div class="w3-card-4 w3-bar bg-donkergroen" id="navbar" style="margin-top: 100px; height: 100px; padding-top: 20px;">
+    <!-- Navbar on small screens -->
+    <div class="w3-large w3-card-4 w3-bar-block w3-dropdown-content w3-hide w3-hide-large bg-donkergroen" id="smallNav" style="right: 0; margin-top: 80px;">
+       <a href="#dyslexie" class="w3-bar-item w3-button w3-hover-opacity" onclick="toggleFunction()"><i class="fas fa-pencil-alt"></i> Dyslexie</a>
+       <a href="#dyscalculie" class="w3-bar-item w3-button w3-hover-opacity" onclick="toggleFunction()"><i class="fa fa-square-root-alt"></i> Dyscalculie</a>
+       <a href="#adhd" class="w3-bar-item w3-button w3-hover-opacity" onclick="toggleFunction()"><i class="fa fa-running"></i> AD(H)D</a>
+       <a href="#about" class="w3-bar-item w3-button w3-hover-opacity" onclick="toggleFunction()"><i class="fa fa-user"></i> Astrid</a>
+       <span id="contactKnop" class="w3-bar-item w3-button w3-hover-opacity w3-hide" onclick="toggleFunction();document.getElementById('contact2').style.display='block'"><i class="fa fa-envelope"></i> Contact</span>
+       <a id="topKnop" href="#top" class="w3-bar-item w3-button w3-hover-opacity w3-hide" onclick="toggleFunction()"><i class="fa fa-arrow-up"></i> Naar boven</a>
+    </div>
+    <div class="w3-content">
+      <div style="position: absolute">
+        <img src="img/logo.png" id="logo">
+      </div>
+      <a class="w3-bar-item w3-button w3-hover-opacity w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars w3-xxxlarge"></i>
+      </a>
+      <div style="margin-left: 190px" id="knoppen">
+        <div style="padding-left: 17px;">Tools2C - leren door zien</div>
+        <div class="w3-hide-medium w3-hide-small">
+         <a href="#dyslexie" class="w3-bar-item w3-button w3-hover-opacity"><i class="fas fa-pencil-alt"></i> Dyslexie</a>
+         <a href="#dyscalculie" class="w3-bar-item w3-button w3-hover-opacity"><i class="fa fa-square-root-alt"></i> Dyscalculie</a>
+         <a href="#adhd" class="w3-bar-item w3-button w3-hover-opacity"><i class="fa fa-running"></i> AD(H)D</a>
+         <a href="#about" class="w3-bar-item w3-button w3-hover-opacity"><i class="fa fa-user"></i> Astrid</a>
+         <span id="contactKnop2" class="w3-bar-item w3-button w3-hover-opacity w3-hide w3-animate-opacity" onclick="document.getElementById('contact2').style.display='block'"><i class="fa fa-envelope"></i> Contact</span>
+         <a id="topKnop2" href="#top" class="w3-bar-item w3-button w3-hover-opacity w3-hide w3-animate-opacity"><i class="fa fa-arrow-up"></i> Naar boven</a>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+<!-- Zand -->
+<div class="bgimg stilbeeld w3-display-container" id="top"
+     style="background-image: url('bg/handen.jpg')">
+
+  <div class="w3-display-bottommiddle w3-black w3-padding w3-round-xxlarge w3-card topform" style="margin-bottom: 2vh">
+    <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
+    <p class="w3-hide-large">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
+    <table id="contact">
+      <!--<tr><td rowspan="3" style="text-align: center;"><img src="img/logo.png" style="width: 100px; margin-right: 10px"></td> -->
+      <tr>
+        <td><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank"><i class="fa fa-map-marker-alt fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+        <td class="naw-link"><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank">Kerklaan&nbsp;Zunderdorp&nbsp;4<span class="w3-hide-small">,</span> 1027AP&nbsp;Amsterdam</a></td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i></td>
+        <td><span class="w3-hide-small">Telefoon: </span>06&#8288;-&#8288;370&nbsp;10&nbsp;529</td>
+      </tr>
+      <tr>
+        <td><a href="mailto:astrid@tools2c.nl"><i class="far fa-envelope fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+        <td class="naw-link"><a href="mailto:astrid@tools2c.nl"><span class="w3-hide-small">E-mail: </span>astrid@tools2c.nl</a></td>
+      </tr>
+    </table>
+    <p class="w3-hide-large">
+      Kom gerust langs voor een kopje <i class="fa fa-coffee"></i><br />
+      ... of laat een berichtje achter:
+    </p>
+    <p class="w3-large w3-hide-small w3-hide-medium">
+      Kom gerust langs voor een kopje <i class="fa fa-coffee"></i><br />
+      ... of laat een berichtje achter:
+    </p>
+    <form id="contactForm" onsubmit="return fetchpost('contactForm')">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Naam" required name="Naam">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="email" placeholder="E-mail" required name="E-mail">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Berichtje" required name="Berichtje">
+      <button id="contactSubmit" class="w3-button w3-black w3-right w3-section w3-round-large" type="submit">
+        <i class="fa fa-paper-plane"></i> VERSTUUR BERICHT
+      </button>
+    </form>
+  </div>
+<!--
+  <div class="w3-display-bottommiddle w3-black w3-opacity w3-padding-large" style="margin-bottom: 10vh" >
+    <span class="w3-large">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</span>
+  </div>
+-->
+  <div class="w3-display-bottommiddle" id="paginatwee"></div>
+</div>
+
+<!-- Welkom - Wat is Davis Counseling -->
+<div class="w3-display-container w3-card-4 quoteblok" id="welkom">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+      Wij volgen het kind, bepakt met wat het (nog) niet zelf kan dragen<b>.</b>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-24">
+  <div class="w3-row">
+    <div class="w3-half">
+      <p><h3>Welkom bij Tools2c</h3></p>
+
+	  <p>Je bent hier waarschijnlijk terecht gekomen omdat jij of je kind aanloopt tegen problemen bij taal, rekenen of gedrag.</p>
+      <p>Zoals ikzelf en duizenden mensen van over de hele wereld hebben ervaren, kan Davis® Counseling deze leer- en gedragsproblemen voor je oplossen.</p>
+	  <p>Davis Counseling legt op een liefdevolle en respectvolle manier een stevige basis voor het leren en het leven waardoor je zelfvertrouwen een boost krijgt.</p>
+  	  <div style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%; background-image: url('bg/astrid-hek.jpg')">&nbsp;</div>
+	<div class="accordion" onclick="accordion(this)">
+      Intro Davis-methode
+    </div>
+    <div class="w3-hide">
+	  <p>De Davis-methode werkt zowel bij dyslexie, dyscalculie als AD(H)D omdat de onderliggende oorzaak wordt aangepakt: verwarring en desoriëntatie.</p>
+      <p>Er ontstaat weer ruimte om te leren. Zonder jarenlange bijles, zonder eindeloze herhaling van dezelfde stof met weinig en trage vooruitgang. En het allermooiste is dat je je bijzondere manier van denken niet hoeft op te geven. Je krijgt er alleen meer controle over.</p> 
+      <p>
+</div>	  
+	 
+	  
+	  <div class="accordion" onclick="accordion(this)">
+      Over mij
+    </div>
+    <div class="w3-hide">
+	  <p>Ik ben Astrid, echtgenote en trotse moeder van een zoon van 15.</p>
+      <p>Ik sta midden in het leven en heb een enorme drive om mensen te helpen om zich ten volle te kunnen ontplooien.</p> 
+      <p>De opleiding tot Davis Counselor heeft mijn leven verrijkt. Ik heb meer grip gekregen op mijn eigen manier van denken en handelen waardoor ik ook anderen kan helpen.</p>
+      <p>De Davis-methode kwam op mijn pad toen ik op zoek was naar manieren om mijn zoon te helpen bij hardnekkige spellingsproblemen. Met behulp van de Davis-gereedschappen heeft hij die zelf overwonnen.</p>
+      <p>Het verbeteren van schoolprestaties is belangrijk, maar veel belangrijker is dat je weer ontspannen en met plezier in de wereld staat.</p>
+	 </div>
+	<div class="accordion" onclick="accordion(this)">
+      Tools2c
+    </div>
+    <div class="w3-hide">
+      <p><b><i>Tools</i></b> is een Engelse woord voor <b>gereedschap</b> of <b>technieken</b>. 
+	  <b>2C</b> spreek je in het Engels uit als <i>to see</i> <b>'te zien'</b>.</p> 
+	  <p>De technieken die je tijdens een Davis Counseling krijgt aangereikt, helpen je om <b>te vertragen</b> om jezelf de tijd te geven om bewust waar te nemen.</p>
+      <p>Vaak zitten onze gedachten goede waarneming in de weg, waardoor je <b><u>denkt</u> iets te zien, te horen of te voelen</b></p>
+	  <p>Bij het lezen zie je bijvoorbeeld woorden die er niet staan, maar wel ongeveer hetzelfde betekenen. 
+	  Als je het goed 'raadt' ben je sneller dan de rest, maar het zorgt er ook voor dat je sneller fouten maakt.</p>
+	  Je ervaart wat het oplevert als je iets langer wacht met denken en invullen: <b>van raden naar <u>zeker weten</u></b>.</p>
+    </div>
+	<div class="accordion" onclick="accordion(this)">
+      Landelijke omgeving
+    </div>
+    <div class="w3-hide">
+	  <p>De Davis Counseling geef ik bij mij thuis. Ik woon in landelijk Noord temidden van weilanden, sloten en rietlanden. 
+	  Tijdens de counseling trekken we erop uit om de omgeving te ontdekken. Je zult ervaren dat de Davis-technieken je helpen om beter te zien, horen en te voelen. Je merkt dat leren juist gemakkelijker gaat als je plezier en ontspanning ervaart.</p> 
+	 </div>
+	<!--
+	<div class="accordion" onclick="accordion(this)">
+      Begin bij de bron
+    </div>
+    <div class="w3-hide">
+      <p>De Davis-methode werkt zowel bij <b>dyslexie, dyscalculie als AD(H)D</b> omdat de onderliggende oorzaak dezelfde is – <b>verwarring en desoriëntatie</b> als gevolg van het <b>ontbreken van betekenis</b> (beelden) bij symbolen en concepten.</p>
+      <p>Als het probleem bij de bron wordt ogelost, ontstaat er weer ruimte om te leren. Zonder jarenlange bijles, zonder eindeloze herhaling van dezelfde stof met weinig en trage vooruitgang. En het allermooiste is dat je je bijzondere manier van denken niet hoeft op te geven. Je krijgt er alleen meer controle over.</p>   
+    </div>
+	-->
+	  </div>
+    <div class="w3-half">
+      <div id="sherpa">
+        <div style="position: relative; padding-left: 35%; top: 0; height: 1em;">
+          <img src="img/kind.png" style="width: 27%" id="kind">
+        </div>
+        <img src="img/sherpa.png" style="margin-left: 15%; margin-top: 50px; width: 30%" id="sherpaimg">
+      </div>
+      <span class="quote" style="font-size: large">Wij volgen het kind, bepakt met wat het (nog) niet zelf kan dragen<b>.</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- boog -->
+<div class="bgimg w3-display-container stilbeeld centerContainer"
+     style="background-image: url('bg/boog.jpg')">
+  <div class="w3-content w3-container w3-padding-24 centerChild" style="display: none">
+    <table class="w3-row" id="voordelen">
+      <tr><td colspan="2"  class="quote" style="padding-bottom: 1em">
+         Als je doet wat je deed, krijg je wat je had<b>.</b> (Einstein)
+      </td><tr>
+      <tr>
+        <th style="width: 50%">Reguliere aanpak</th>
+        <th>Davis aanpak</th>
+      </tr>
+      <tr>
+        <td><ul><li>Eindeloze herhaling van dezelfde stof / bijles</li></ul></td>
+        <td><ul><li>Een leuk en afwisselend programma</li></ul></td>
+      </tr>
+      <tr>
+        <td><ul><li>Oorzaak wordt niet aangepakt</li></ul></td>
+        <td><ul><li>Oorzaak van dyslectische verschijnselen wordt aangepakt</li></ul></td>
+      </tr>
+      <tr>
+        <td><ul><li>Weinig en trage vooruitgang</li></ul></td>
+        <td><ul><li>Onmiddellijk resultaat</li></ul></td>
+      </tr>
+      <tr>
+        <td><ul><li>Past niet bij manier van denken en leren</li></ul></td>
+        <td><ul><li>Past bij manier van denken en leren, maakt optimaal gebruik van de manier van denken en leren waarin beelddenkers uitblinken.</li></ul></td>
+      </tr>
+      <tr>
+        <td><ul><li>Jarenlang oefenen</li></ul></td>
+        <td><ul><li>Vijf tot acht dagen intensieve counseling</li></ul></td>
+      </tr>
+      <tr>
+        <td><ul><li>Kennis wordt overgedragen</li></ul></td>
+        <td><ul><li>Kennis wordt zelf opgedaan</li></ul></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="w3-display-container w3-card-4 quoteblok">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+      De vraag is niet waar je naar kijkt, maar hoe jij het ziet
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-16">
+  <div class="w3-row">
+    <div class="w3-half" style="padding-right: 8px">
+      <p><h3>Davis-benadering van (leer)stoornissen</h3></p>
+
+    <p><b>Wordt ons wel eens verteld wat taal is?<br>
+	Waarom je naar school moet?<br>
+	Hoe je je aandacht ergens bij kunt houden?<br>
+	Hoe je moet opletten of focussen?<br>
+	Hoe dat eigenlijk moet, stilzitten?</b></p>
+
+	<p>Sommige mensen zijn extra <b>nieuwsgierig</b>. Zij vinden het lastig om iets gewoon maar aan te nemen. Zij willen <u><b>zelf</b></u> de logica of het nut ergens van inzien.</p>
+	Zij zijn van nature eerder geneigd om <b>overeenkomsten (patronen)</b> te zien dan verschillen en hebben daarom vaak moeite met <b>uitzonderingen en ontastbare of symbolische dingen</b>, zoals letters en/of getallen. 
+	Wanneer ze proberen symbolen te snappen, raken ze snel <b>verward en gedesoriënteerd</b>.</p> 
+	<div class="accordion" onclick="accordion(this)">
+      Verwarring en desoriëntatie
+    </div>
+	<div class="w3-hide">
+	<p>Door de <b>verstoorde waarneming</b>, komt informatie vervomd binnen en worden er steeds weer en meer
+<b>fouten</b> gemaakt. En dat leidt weer tot <b>emotionele reacties</b>, frustrustratie en verlies aan eigenwaarde.</p>  
+<p>Deze desoriëntatie beperkt zich niet tot wat je ziet. Mensen die zichzelf herkennen in wat dyslexie, dyscalculie en/of AD(H)D wordt genoemd, <b>horen woorden vaak onvolledig, verkeerd of helemaal niet</b>. 
+Zij hebben vaak <b><u>geen</u> gevoel voor volgorde of tijd</b> waardoor klokkijken onmogelijk is. 
+Zij kunnen motorisch <b>onritmisch of onbeholpen</b> zijn.</p>
+</div>
+
+<div class="accordion" onclick="accordion(this)">
+      Oude oplossingen
+    </div>
+	<div class="w3-hide">
+<p><b>Om 'te overleven' ontwikkelen zich dwangmatige gedragspatronen</b>. Deze patronen kunnen zich al rond zes, zeven jaar ontwikkelen. 
+Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke strategieen.</p> 
+<p>Ron Davis noemt zulke dwangmatige gedragspatronen 'oude probleemoplossingen': 
+   <ul>
+   <li>van buiten leren</li>
+   <li>het zingend opzeggen van het alfabet</li> 
+   <li>onleesbaar handschift om spellingsfouten te verbergen</li> 
+   <li>orginele uitvluchten en het vermijden van alles dat met school of lezen te maken heeft.</li> 
+   </ul>
+Als je verwarring wegneemt, verdwijnen de oude oplossingen vanzelf.</p>
+</div>
+	<div class="accordion" onclick="accordion(this)">
+    Toename stoornissen? 
+    </div>
+    <div class="w3-hide">
+	  <p>Er zijn een aantal redenen waarom het aantal mensen op wie de labels dyslexie, dyscalculie en AD(HD)van toepassing is, de laatste jaren lijkt toe te nemen. Daar zijn een aantal redenen voor.</p>
+	  
+	  <p>Uitzonderingen daargelaten, zijn kinderen gemiddeld genomen leesrijp tussen de 6 en 9 jaar. 
+	  Vanuit het misverstand dat je niet vroeg genoeg kunt beginnen en baat het niet dan schaadt het niet, krijgen kinderen de laatste jaren al in de kleutergroepen letters en woorden aangeboden. 
+	  Veel kinderen zijn op die leeftijd nog niet leesrijp. De verwarring die dat veroorzaakt kan de ontwikkeling wel degelijk schaden en dyslexie veroorzaken.</p> 
+      <div id="leesrijp">
+        <div style="width: 100%">
+          <div id="rijp"    class="quote zover">Leesrijp</div>
+          <div id="nogniet" class="quote zover">Nog niet zo ver</div>
+        </div>
+        <div>
+          <div id="lrhuizen"  class="leesrijpimg"><img src="static/leesrijp-huizen.png"></div>
+          <div id="lrflessen" class="leesrijpimg"><img src="static/leesrijp-flessen.png"></div>
+          <div id="lrbomen"   class="leesrijpimg"><img src="static/leesrijp-bomen.png"></div>
+        </div>
+      </div>
+
+	  <p>Er waren natuurlijk altijd al drukke kinderen in de klas en intelligente mensen die om onverklaarbare redenen moeite hadden om te leren lezen of rekenen. Inmiddels is het een ingeburgerde term en zijn er steeds betere-methodes om vast te stellen of er sprake is van iets wat we nu dyslexie noemen.</p> 
+	  <p>Daarnaast hebben kinderen meer prikkels om zich heen. Computergames en sociale media slokken veel aandacht en tijd op.
+	  <p>We leven ook in een tijd waarin alles ter discussie staat. Kinderen krijgen te maken met tegenstrijdige opvattingen over opvoeding en onderwijs. 
+	     Ouders en leerkrachten weten vaak zelf niet goed welke waarden en vaardigheden zij kinderen moeten meegeven om ze voor te bereiden op de toekomst.</p> 	 
+    </div>
+	<div class="accordion" onclick="accordion(this)">
+    Ezelsbruggetjes 
+    </div>
+    <div class="w3-hide">
+	  <p>Als je iets niet begrijpt, krijg je vaak ezelsbruggetjes aangereikt. Goed bedoeld, maar helaas helpen die trucjes je vaak van de regen in de drup.</p>
+	  
+	  
+	  <p>Een paar voorbeelden:</p> 
+	  <p>Je hoort aan de klank van een woord vaak niet of het eindigt op een d of een t. Om je te helpen krijg je als ezelsbruggetje dat je een woord moet verlengen. Daarmee wordt bedoeld dat je er meervoud van moet maken. Boot wordt boten en bord worden borden.
+	  <br>Een typische dysleticus zal als er wordt gezegd verleng boot, niet aan meervoud denken. Zij zien eerder het volgende voor zich:</p>
+    <img src="img/boot.png" style="width: 45%; float: left;">
+    <img src="img/boot-lang.png" style="width: 55%; float: left;">
+	  
+	  <p>Iedereen heeft ergens op school het ezelsbruggetje 't kofschip of tegenwoordig 't exfokschaap meegekregen. De meeste mensen weten echter niet wanneer ze het toe moeten passen.</p>
+	  <p>Bij het rekenen met breuken, krijg je deze spreuk: 'Delen door een breuk is hetzelfde als vermenigvuldigen met het omgekeerde'. Voor de meeste mensen abracadabra. </p> 	 
+    </div>
+    
+	<div class="accordion" onclick="accordion(this)">
+	Voordeel en nadeel van labels
+	</div>
+	<div class="w3-hide">
+	  <p>Als je vastloopt op school kom je al snel in een vicieuze cirkel terecht, je voelt je dommer dan anderen, 
+      gaat nog meer fouten maken en de kans is groot dat je op een gegeven moment helemaal afhaakt.</p>
+	  <p>Als dyslexie wordt vastgesteld, heeft dat als grote voordeel dat wordt erkent dat problemen met taal niet betekent dat je dommer bent dan anderen. Je krijgt meer hulp en ruimte en dat kan ervoor zorgen dat de vicieuze cirkel wordt doorbroken.</p> 
+      <p>Het nadeel van dit label is dat je kunt gaan denken dat je een stoornis hebt en dus nooit echt goed kunt worden in taal. Dat is jammer omdat dyslexie wordt gezien als een probleem met taal, terwijl het eigenlijk een probleem is dat veroorzaakt wordt 
+	  doordat de dyslecticus van nature extra nieuwsgierig is, dus eerder meer dan minder informatie nodig heeft.</p> 
+	  <p>Ook wordt over het hoofd gezien dat de levendige verbeelding van dyslectici juist bijzonder geschikt is om problemen op te lossen. Het zijn juist deze mensen die als eerste door hebben dat redeneringen niet helemaal kloppen, dat sommige regels en gedrag onrechtvaardig zijn.
+	</div>
+	</div>	 
+	  
+    <div class="w3-half">
+      <div id="ezelsbrug">
+       <img src="img/ezelsbrug.png" style="width: 100%">
+       <span style="font-family: MV Boli; font-size: large">
+         De korte route naar het antwoord, brengt je niet naar begrip.<b>.</b>
+       </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Poemeltje -->
+<video id="poemeltje" poster="video/poemeltje.jpg" autoplay muted loop class="w3-display-container">
+  <source src="video/poemeltje.mp4" type="video/mp4">
+</video>
+
+<div class="w3-display-container w3-card-4 quoteblok" style="top: -8px">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+    Wat we zelf ontdekken, blijft voor altijd bij ons
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-24">
+  <div class="w3-row">
+    <div class="w3-half">
+	<p><h3>Zie je het voor je?</h3></p>
+    <p><b>'Ik zie het even niet voor me'</b><br><b>'Ik kan me er niks bij voorstellen'</b>.</p> 
+     Mensen met dyslexie kunnen informatie waar zij geen beeld/betekenis bij hebben lastig onthouden. De Davis-methode zet het <b>voorstellingsvermogen</b> van dyslectische personen in om betekenis te geven aan informatie.</p>
+    <p><b>Tijdens een Davis Counseling maak je gebruik van modelleerklei (plasticine) om je denkbeelden uit je hoofd te halen door er <u>zelf</u> objecten in de echte wereld van te 
+     maken.</b></p> 
+	 <p>Je zet het beeld als het ware stil en daardoor kun je rustig kijken of het beeld in je brein eigenlijk wel klopt met de werkelijkheid.</p>
+	 <p>Omdat de klei niet hard wordt, kun je het beeld in alle rust verbeteren, totdat het helemaal klopt voor jou.</p>
+     <p>Je hebt je de betekenis dan <b><u>eigen</u> gemaakt</b>. De kennis is onderdeel geworden van wie jij bent. Je kunt het daarna nooit meer vergeten, hoe hard je er ook je best voor doet.	 
+ 
+<div class="accordion" onclick="accordion(this)">
+      Beelddenken
+    </div>
+    <div class="w3-hide">	 
+	 <p><b>Ieder mens is bij zijn geboorte een beelddenker</b>. Door interactie met andere mensen onstaat er langzaam taalbegrip. Eerst krijgen klanken betekenis en leer je om zelf klanken te maken om te laten weten wat je nodig hebt. Iets later kom je in aanraking met 
+      geschreven taal in de vorm van letters en woorden.</p>
+      <p>Geleidelijk aan wordt zo het vermogen om in beelden te denken aangevuld met de mogelijkheid om deze beelden om te zetten in taal. <b>Taal is een communicatiemiddel</b>; het stelt ons
+      in staat om beelden (<b>betekenis</b>) met andere mensen te delen.</p> 
+	  <p><b>Bij iedereen verloopt de ontwikkeling van beeld- naar taaldenken in een eigen tempo</b> en sommige mensen blijven een grote voorkeur houden voor het denken in beelden.</p>
+	  <p>Het denken in taal gaat veel trager dan het denken in beelden. Gemiddeld genomen kun je in taal 2 tot 3 woorden per seconden 'denken'. 'Denken' in beelden gaat veel sneller in gemiddeld 32 beelden per seconde.</p> 
+ 	  <!--
+	  <p>In het onderwijs wordt nog onvoldoende rekening gehouden met andere leerstijlen. Informatie wordt talig en in stukjes aangeboden en dat sluit niet aan bij de leerstijl van kinderen die vooral in beelden denken. </p> -->	
+    </div>
+
+<div class="accordion" onclick="accordion(this)">
+      Beelden en taal
+    </div>
+    <div class="w3-hide"><p>Heb je problemen met <b>taal</b> dan ga je aan de slag met zogenaamde <b>triggerwoorden</b>. 
+       Dat zijn onder andere woorden als <b>de, het, een, of</b>. Woorden waar je niet automatisch een beeld bij hebt.</p> 
+	   <b>Ook bij het rekenen heb je met taal te maken</b>. Niet alleen bij verhaalsommen, maar ook bij rekenbegrippen als <b>keer (of maal), delen, breuken, cijfers achter de komma en symbolen als x : / en %.</b></p>
+      <p>Samen met de counselor en met behulp van een woordenboek bespreek je de betekenis. Je maakt er een zin bij en kleit een beeld dat er voor jou bij past.</p>
+<img src="img/sm-de.jpg" style="width: 100%"> 
+    </div>
+    <div class="accordion" onclick="accordion(this)">
+      Beeld en begrip
+      </div>
+	  <div class="w3-hide"> <p>Als je problemen hebt met <b>rekenen</b> en/of met <b>sociale situaties</b> dan heb je 
+    waarschijnlijk geen of een vervormd beeld bij een aantal belangrijke levensbegrippen, zoals 
+<b>verandering</b> en <b>oorzaak/gevolg</b>. Als deze begrippen niet helemaal duidelijk voor je zijn, is het heel lastig om te leren rekenen
+ of om te begrijpen wat er van je wordt verwacht: thuis, op school of met vrienden. Er kunnen dan gemakkelijk misverstanden ontstaan, waardoor 
+ ook jij je niet begrepen voelt.</p> 
+ <img src="img/concept-mastery-verandering.jpg" style="width: 100%"> 
+<p>Je maakt tijdens een Davis Counseling met klei zelf een voorstelling van deze begrippen. Als je zelf een helder beeld hebt neergezet, heb je je het echt eigen gemaakt. Het maakt vanaf dan onderdeel uit van wie jij bent. Je kunt het nooit meer vergeten.</p>
+
+
+
+      </div>
+
+    </div>
+	<div class="w3-half">
+    <div id="taal-en-beeld">
+	    <img src="img/taal-en-beeld.png" style="width: 48%; margin-right: 1%" id="taal-beeld">
+      <img src="img/jongetje-denken.png" style="margin-top: 200px; width: 48%; margin-left: 1%" id="jongetje">
+    </div>
+	  </div>
+  </div>
+</div>
+
+
+<div class="w3-display-container stilbeeld" style="background-image: url('bg/op-bankje.jpg'); min-height: 80%;">
+  <div style="position: absolute; bottom: 25%" id="anker2">&nbsp;</div>
+</div>
+
+<!-- orienteren - ontspannen - energie doseren -->   
+<div class="w3-display-container w3-card-4 quoteblok">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+    In een Davis Counseling leer je technieken die je helpen om je speciale 'gave van dyslexie' in jouw voordeel te laten werken
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-16">
+  <div class="w3-row">
+    <div class="w3-half">
+	  <p><h3>Davis Counseling</h3></p>
+	  <p>De Davis-methode sluit aan bij de manier van denken van <b>beelddenkers</b>, waardoor een nadeel in een voordeel verandert.</p> 
+	  <p>Tijdens een Davis Counseling worden negatieve ervaringen omgezet in positieve ervaringen, bouw je in een <b>veilige omgeving</b> aan <b>zelfvertrouwen</b>, waarna je talenten tot bloei kunnen komen. 
+	  Je leert desoriëntatie te herkennen en oefent met technieken om <b>desoriëntatie</b> te stoppen, om te <b>focussen</b> en om <b>controle te krijgen op je energieniveau</b>.</p> 
+	  <p>Na de counseling ben je in staat om <b>zelf</b> je <b>verwarring</b> bij letters, woorden en concepten <b>op te lossen</b>.</p>
+      <p>Davis® Counseling is een <b>intensieve meerdaagse 1-op-1  training</b> voor kinderen, jongeren en volwassenen. De counseling is gebaseerd op de principes en-methodes die zijn ontwikkeld door <b>Ron Davis</b>.</p>
+      <p>De eenvoudige technieken van de Davis-methode helpen je om controle te houden op hoe verschillende delen van je hersenen samenwerken. De technieken noemen we <b>Davis-‘tools’</b> of <b>Davis-gereedschappen</b>. 
+	  Ze helpen om je hersenen over te laten schakelen van denken naar <b>waarnemen</b>.</p>
+      <p>Met de Davis-methode krijg je <b>grip</b> op je speciale <b>‘gave van dyslexie’</b> zodat je jouw manier van denken en leren in je voordeel kunt gebruiken.</p>
+    </div>
+
+    <div class="w3-half">
+
+       <div class="w3-row" onclick="document.getElementById('gereedschappen').style.display='block'" id="gereedschap">
+        <div style="border-bottom: 2px solid black; padding-bottom: 2px; margin-bottom: 0.5em">Davis-gereedschappen:</div>
+        <div style="float: left; text-align: center; width: 33.33333%" id="orienteren">
+          <img src="svg/orienteren.svg" style="width: 95%">
+          <p>Oriënteren</p>
+        </div>
+        <div style="width: 33.33333%; float: left; margin-top: 120px" id="loslaten">
+          <img src="svg/ontspannen.svg" style="width: 95%">
+          <p>Loslaten</p>
+        </div>
+        <div style="width: 33.33333%; float: left; margin-top: 240px" id="doseren">
+          <img src="svg/energie.svg" style="width: 95%">
+          <p>Energie<br>doseren</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- brug -->
+<div class="w3-display-container stilbeeld" style="background-image: url('bg/handen.jpg'); min-height: 80%;">
+  <div style="position: absolute; bottom: 25%" id="anker2">&nbsp;</div>
+</div>
+<!-- Dyslexie -->
+<div class="w3-display-container w3-card-4 quoteblok" id="stoornis">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+    Dyslexie is geen stoornis die je hebt of die je bent,
+    het is een manier van leven en leren
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-24">
+  <div class="w3-row">
+    <div class="w3-half">
+	<p><h3>Davis® Dyslexie Correctie Programma</h3></p>
+	<p>Dyslexie training met de Davis-methode is een intensieve vijfdaagse training van in totaal 30 uur.  Tijdens de training wordt je je bewust van jouw manier van denken en wat er gebeurt als je ergens van in de war raakt. Je leert om verwarring en desoriëntatie bij jezelf te herkennen en je oefent met  eenvoudige technieken waarmee je dit kunt oplossen. Je kunt weer rustig nadenken waardoor je informatie kunt laten binnenkomen en onthouden.</p>
+       <div class="accordion" onclick="accordion(this)">
+      Correctiestrategie bij taal
+      </div>
+	  <div class="w3-hide">
+	<p>In de counseling zijn er drie dingen waarop we ons richten:</p>  
+	  <ul style="padding-left: 1.5ch;">
+       <li>MOTIVATIE EN VERANTWOORDELIJKHEID - voorwaarde voor verandering</li>
+       <li>ORIËNTATIE – het oriëntatieprogramma corrigeert de waarneming</li>
+       <li>BASISSYMBOLEN –  het alfabet en interpunctie Mastery-programma</li>
+       <li>TRIGGERWOORDEN – beelden bij woorden corrigeren de dyslexie</li>
+	  </ul> 
+	 </div>
+
+	  <div class="accordion" onclick="accordion(this)">
+      Programma
+      </div>
+	  <div class="w3-hide">
+	  <ul style="padding-left: 1.5ch;">
+		<li>30 uur/vijfdaags programma (1-op-1) - bij voorkeur met actieve deelname van een van de ouders</li>
+        <li>Pakt oorzaken aan die problemen met lezen, schrijven, spelling, handschrift en aandacht (focus) veroorzaken.</li>
+        <li>Lost verwarring over taalsymbolen op – letters, leesteken en betekenis van veelvoorkomende woorden als en, of, ook etc. </li>
+		<li>Verbetert woordherkenning, lees- en schrijfvaardigheid en taalbegrip.</li>
+		<li>Leert technieken om focus te houden, frustratie te verminderen en energieniveau te controleren.</li> 
+		<li>Counselor blijft beschikbaar voor vragen en ondersteuning tot tenminste een jaar na afronding van counseling. De counselor helpt ouders en leerkrachten om kind in zijn ontwikkelingstraject te ondersteunen.</li> 
+		<li>Voor kinderen vanaf 8 jaar en volwassenen van alle leeftijden</li>
+	  </ul>
+	  </div>
+       <div class="accordion" onclick="accordion(this)">
+      Kosten
+		</div>
+		<div class="w3-hide">
+		 <p>All-in prijs € 1.800,00* waarbij inbegrepen:</p>
+	  <ul style="padding-left: 1.5ch;">
+	    <li>Informatief kennismakingsgesprek</li>
+        <li>Intakegesprek cliënt</li>
+        <li>Counseling (indicatie 30 uur)</li>
+        <li>Materialen</li>
+        <li>Verslaglegging</li>
+        <li>Eindevaluatie</li>
+        <li>Nazorg:</li>
+        <li>Follow-up dag (maximaal 6 uur)</li>
+        <li>Overleg school/ werk en het thuisfront</li>
+        <li>Telefonisch advies of vragen</li>
+	  </ul>
+	  <p>* Als binnen twee dagen wordt besloten om de counseling niet voort te zetten wordt € 10 per besteed uur in rekening gebracht. Voorbeeld: Bij twee dagen counseling van in totaal 10 uur, wordt € 100 in rekening gebracht. 
+		</div>
+	</div>
+    <div class="w3-half">
+      <div id="gids">
+        <img src="img/gids.png" style="width: 100%">
+        <span style="font-family: MV Boli; font-size: large" id="fader">
+          Dyslexie is geen stoornis die je hebt of die je bent,
+          het is een manier van leven en leren
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Klok -->
+<div class="w3-display-container stilbeeld centerContainer bgimg"
+     style="background-image: url('bg/in-gras.jpg')">
+  <div style="position: absolute; bottom: 100px" id="dyscalculie">&nbsp;</div>
+</div>
+
+<!-- Dyscalculie -->
+<div class="w3-display-container w3-card-4 quoteblok">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+    Het enige dat hetzelfde blijft, is dat alles verandert
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-24">
+  <div class="w3-row">
+    <div class="w3-half">
+	<p><h3>Davis® Dyscalculie Correctie Programma</h3></p>
+	<p>Dyscalculie training met de Davis-methode is een intensieve vijfdaagse training van in totaal 30 uur.  Tijdens de training wordt je je bewust van jouw manier van denken en wat er gebeurt als je ergens van in de war raakt. Je leert om verwarring en desoriëntatie bij jezelf te herkennen en je oefent met  eenvoudige technieken waarmee je dit kunt oplossen. Je kunt weer rustig nadenken waardoor je informatie kunt laten binnenkomen en onthouden.</p>
+      <p>Aan problemen met rekenen liggen volgens de Davis-methode twee basisfactoren ten grondslag:</p>
+    <ul>
+    <li>een ontwikkelingsaspect, waardoor iemand concepten mist of er een verkeerd beeld van heeft.</li>
+    <li>een voor een beelddenker ongeschikte lesmethode, die niet werken bij kinderen die in beelden denken.</li>
+    </ul> 
+	  
+	  <div class="accordion" onclick="accordion(this)">
+      Correctiestrategie bij rekenen
+      </div>
+	  <div class="w3-hide">
+	<p>In de counseling zijn er vier dingen waarop we ons richten:</p>  
+	  <ul style="padding-left: 1.5ch;">
+       <li>MOTIVATIE EN VERANTWOORDELIJKHEID - voorwaarde voor verandering</li>
+       <li>ORIËNTATIE – het oriëntatieprogramma corrigeert de waarneming</li>
+       <li><a onclick="document.getElementById('concepten').style.display='block'">BASISCONCEPTEN</a> –  het Concept Mastery-programma</li>
+       <li>GRONDBEGINSELEN  VAN HET REKENEN – het corrigeren van de dyscalculie</li>
+	  </ul> 
+	 </div>
+	<div class="accordion" onclick="accordion(this)">
+      Programma
+      </div>
+	  <div class="w3-hide">
+	   <ul style="padding-left: 1.5ch;">
+	  	<li>30 - 50 uur/meerdaags programma (1-op-1)</li>
+        <li>Pakt oorzaken aan die problemen met rekenen, kloklezen en aandacht (focus) veroorzaken.</li>
+        <li>Lost verwarring over rekensymbolen op</li>
+		<li>Verbetert woordherkenning, lees- en schrijfvaardigheid en taalbegrip.</li>
+		<li>Leert technieken om focus te houden, frustratie te verminderen en energieniveau te controleren.</li> 
+		<li>Counselor blijft beschikbaar voor vragen en ondersteuning tot tenminste een jaar na afronding van counseling. De counselor helpt ouders en leerkrachten om kind in zijn ontwikkelingstraject te ondersteunen.</li> 
+		<li>Voor kinderen vanaf 8 jaar en volwassenen van alle leeftijden</li>
+	   </ul>
+	  </div>
+	  <div class="accordion" onclick="accordion(this)">
+      Kosten
+      </div>
+	  <div class="w3-hide">
+         <p>All-in prijs € 2.100,00* waarbij inbegrepen:</p>
+	   <ul style="padding-left: 1.5ch;">
+	    <li>Informatief kennismakingsgesprek</li>
+        <li>Intakegesprek cliënt</li>
+        <li>Counseling (indicatie 40 uur)</li>
+        <li>Materialen</li>
+        <li>Verslaglegging</li>
+        <li>Eindevaluatie</li>
+        <li>Nazorg:</li>
+        <li>Follow-up dag (maximaal 6 uur)</li>
+        <li>Overleg school/ werk en het thuisfront</li>
+        <li>Telefonisch advies of vragen</li>
+	  </ul>
+<p>* Als binnen twee dagen wordt besloten om de counseling niet voort te zetten wordt € 10 per besteed uur in rekening gebracht. Voorbeeld: Bij twee dagen counseling van in totaal 10 uur, wordt € 100 in rekening gebracht. 
+     </div>
+  </div>
+  <div class="w3-half">
+  </div>
+ </div>
+</div>
+
+<div class="w3-display-container stilbeeld bgimg"
+     style="background-image: url('bg/radslag.jpg')">
+  <div style="position: absolute; bottom: 100px" id="adhd">&nbsp;</div>
+</div>
+<div class="w3-display-container w3-card-4 quoteblok">
+  <div class="w3-container w3-content w3-padding-24 w3-row">
+    De natuur kent geen beloning of straffen, enkel gevolgen<b>.</b> (Ingersoll)
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-16">
+  <div class="w3-row">
+    <div class="w3-half">
+     <p><h3>Davis® AD(H)D Correctie Programma</h3></p>
+	 <p>Heb je moeite om je aandacht bij een taak te houden?
+		Kom je in actie zonder er eerst over na te denken?	
+		Ben je volgens de mensen om je heen vaak te druk? Dan wordt dat <b>ADHD</b> genoemd.</p>
+     <p>Heb je eerder dromerig dan hyperactief? Dan heet dat <b>ADD</b>.</p>
+	<p><b>ADHD/ADD training met de Davis®-methode</b> is een intensieve meerdaagse training van 40 tot 50 uur. 
+	Met de Davis-methode leer je om verwarring en desoriëntatie bij jezelf te herkennen en oefen je met eenvoudige technieken 
+	<b>waardoor AD(H)D-symptomen</b> geleidelijk aan vanzelf <b>verdwijnen</b>. Je kunt weer rustig nadenken waardoor je informatie kunt laten binnenkomen en meer 
+	grip krijgt op situaties in je dagelijks leven.</p> 
+	
+	<p>Als je sociaal weerbaarder wilt worden en meer regie wil krijgen over je eigen gedrag dan kan deze methode je helpen om situaties uit je eigen 
+       leven in klei te maken. Je kunt ze dan rustig bekijken en aanwijzen wanneer er wat gebeurt. Je kunt dan zelf onderzoeken wat 
+       je eigen aandeel in de ontstane situatie is en hoe bepaalde situaties anders zouden verlopen als je anders zou reageren.</p>
+	
+	<div class="accordion" onclick="accordion(this)">
+      Correctiestrategie bij AD(H)D
+    </div>
+	  <div class="w3-hide">
+	  <p>In de counseling zijn er vier dingen waarop we ons richten:</p>  
+	  <ul style="padding-left: 1.5ch;">
+       <li>MOTIVATIE EN VERANTWOORDELIJKHEID - voorwaarde voor verandering</li>
+       <li>ORIËNTATIE – het oriëntatieprogramma corrigeert de waarneming</li>
+	   <li>LOSLATEN – een oefening om op ontspannen manier focus te houden</li>
+	   <li>ENERGIEMETER – een oefening om op ontspannen manier focus te houden</li>
+       <li><a onclick="document.getElementById('concepten').style.display='block'">BASISCONCEPTEN</a> –  het Concept Mastery-programma corrigeert misverstanden rond basiscocepten</li>
+       <li>TOEPASSEN BASISCONCEPTEN – het toepassen van de opgedane kennis in situaties waar je vaak in vast loopt</li>
+	  </ul> 
+	 </div>
+	<div class="accordion" onclick="accordion(this)">
+      Programma
+      </div>
+	    <div class="w3-hide">
+	  <ul style="padding-left: 1.5ch;">
+		<li>40-50 uur/meerdaags programma (1-op-1)</li>
+        <li>Verbetert begrip, het lezen van sociale situaties.</li>
+		<li>Leert technieken om focus te houden, frustratie te verminderen en energieniveau te controleren.</li> 
+		<li>Counselor blijft beschikbaar voor vragen en ondersteuning tot tenminste een jaar na afronding van counseling.</li> 
+		<li>Voor kinderen vanaf 8 jaar en volwassenen van alle leeftijden.</li>
+	  </ul>
+	  </div>
+	
+	<div class="accordion" onclick="accordion(this)">
+      Kosten
+      </div>
+	  <div class="w3-hide">
+      <p><b>All-in prijs € 2.200,00* waarbij inbegrepen:</b></p>
+	  <ul style="padding-left: 1.5ch;">>
+	    <li>Informatief kennismakingsgesprek</li>
+        <li>Intakegesprek cliënt</li>
+        <li>Counseling (indicatie 30 uur)</li>
+        <li>Materialen</li>
+        <li>Verslaglegging</li>
+        <li>Eindevaluatie</li>
+        <li>Nazorg:</li>
+        <li>Follow-up dag (maximaal 6 uur)</li>
+        <li>Overleg school/ werk en het thuisfront</li>
+        <li>Telefonisch advies of vragen</li>
+	  </ul>
+      <p>* Als binnen twee dagen wordt besloten om de counseling niet voort te zetten wordt € 15 per besteed uur in rekening gebracht. Voorbeeld: Bij twee dagen counseling van in totaal 10 uur, wordt € 150 in rekening gebracht. </span>
+     </div>
+    </div>
+
+
+<div class="w3-half">
+      <div id="groei">
+        <img src="img/groei.png" style="width: 60%; margin-left: 20%; margin-right: 20%">
+        <span style="font-family: MV Boli; font-size: large" id="fader">
+          Het enige wat hetzelfde blijft, is dat alles verandert.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Astrid bij het hek -->
+<div class="w3-display-container stilbeeld bgimg"
+     style="background-image: url('bg/astrid-hek.jpg')">
+  <div style="position: absolute; bottom: 50px" id="boom">&nbsp;</div>
+</div>
+<!--
+<div class="w3-content w3-container w3-padding-24">
+  <div class="w3-row">
+    <div class="w3-rest">
+      <video id="animatie" autoplay muted loop style="width: 100%">
+        <source src="School%20vader%20zoon%202.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+-->
+
+<footer class="w3-bar w3-green" style="background-color: #030 !important">
+  <div class="w3-content w3-container w3-padding-24 w3-row">
+    <div class="w3-half" id="naw">
+      <table>
+        <tr><td rowspan="3" style="text-align: center;"><img src="img/logo.png" style="width: 100px; margin-right: 10px"></td>
+          <td><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank"><i class="fa fa-map-marker-alt fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+          <td class="naw-link"><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank">Kerklaan&nbsp;Zunderdorp&nbsp;4<span class="w3-hide-small">,</span> 1027AP&nbsp;Amsterdam</a></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i></td>
+          <td><span class="w3-hide-small">Telefoon: </span>06&#8288;-&#8288;370&nbsp;10&nbsp;529</td>
+        </tr>
+        <tr>
+          <td><a href="mailto:astrid@tools2c.nl"><i class="far fa-envelope fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+          <td class="naw-link"><a href="mailto:astrid@tools2c.nl"><span class="w3-hide-small">E-mail: </span>astrid@tools2c.nl</a></td>
+        </tr>
+        <tr class="w3-hide-medium w3-hide-large">
+          <td style="text-align: center; padding-right: 1em; font-size: 9px"><a href="http://www.dyslexia.com/ddai.htm"><img src="static/dda-wit.png" style="width: 120px" /></a><br />Licensed&nbsp;and&nbsp;certified<br />by&nbsp;Davis&nbsp;Dyslexia<br />Association&nbsp;International</td>
+          <td colspan="2" style="font-size: 11px;">Professionele diensten omschreven als Davis&reg;, inclusief Davis&reg; Dyslexie Counseling, Davis&reg; Symbol Mastery, Davis&reg; Ori&euml;ntatie Counseling, Davis&reg; Aandachtscounseling, Davis&reg; Dyscalculie&nbsp;Counseling en Davis&reg; programma voor het jonge kind, mogen alleen aangeboden worden door mensen die opgeleid en gecertificeerd zijn als Davis Counselors of Specialisten door&nbsp;<a href="http://www.dyslexia.com/ddai.htm" target="_blank">Davis&reg; Dyslexia Association International</a>.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="w3-half w3-hide-small">
+      <table>
+        <tr>
+          <td style="text-align: center; padding-right: 1em; font-size: 9px; vertical-align: top"><a href="http://www.dyslexia.com/ddai.htm"><img src="static/dda-wit.png" style="width: 120px" /></a><br />Licensed&nbsp;and&nbsp;certified<br />by&nbsp;Davis&nbsp;Dyslexia<br />Association&nbsp;International</td>
+          <td style="font-size: 11px;">Professionele diensten omschreven als Davis&reg;, inclusief Davis&reg; Dyslexie Counseling, Davis&reg; Symbol Mastery, Davis&reg; Ori&euml;ntatie Counseling, Davis&reg; Aandachtscounseling, Davis&reg; Dyscalculie&nbsp;Counseling en Davis&reg; programma voor het jonge kind, mogen alleen aangeboden worden door mensen die opgeleid en gecertificeerd zijn als Davis Counselors of Specialisten door&nbsp;<a href="http://www.dyslexia.com/ddai.htm" target="_blank">Davis&reg; Dyslexia Association International</a>.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</footer>
+
+<div class="w3-container">
+  <div id="contact2" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4 w3-round-xlarge" style="min-width: 50%; padding: 24px;">
+      <header class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('contact2').style.display='none'" 
+        class="w3-display-topright w3-button w3-round-xxlarge"><i class="w3-large fas fa-window-close"></i></span>
+      </header>
+      <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
+      <p class="w3-hide-large">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
+      <table >
+        <tr>
+          <td><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank"><i class="fa fa-map-marker-alt fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+          <td class="naw-link"><a href="https://goo.gl/maps/LKNfjtSBvcw5fEaN7" target="_blank">Kerklaan&nbsp;Zunderdorp&nbsp;4<span class="w3-hide-small">,</span> 1027AP&nbsp;Amsterdam</a></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i></td>
+          <td><span class="w3-hide-small">Telefoon: </span>06&#8288;-&#8288;370&nbsp;10&nbsp;529</td>
+        </tr>
+        <tr>
+          <td><a href="mailto:astrid@tools2c.nl"><i class="far fa-envelope fa-fw w3-hover-opacity w3-large w3-margin-right"></i></a></td>
+          <td class="naw-link"><a href="mailto:astrid@tools2c.nl"><span class="w3-hide-small">E-mail: </span>astrid@tools2c.nl</a></td>
+        </tr>
+      </table>
+      <p class="w3-hide-large">
+        Kom gerust gezellig langsvoor een kopje <i class="fa fa-coffee"></i><br />
+        ... of laat een berichtje achter:
+      </p>
+      <p class="w3-large w3-hide-small w3-hide-medium">
+        Kom gerust gezellig langsvoor een kopje <i class="fa fa-coffee"></i><br />
+        ... of laat een berichtje achter:
+      </p>
+      <form id="contactForm2" onsubmit="return fetchpost('contactForm2')">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Naam" required name="Naam">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="email" placeholder="E-mail" required name="E-mail">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Berichtje" required name="Berichtje">
+        <button id="contactSubmit2" class="w3-button small-on-small w3-green w3-right w3-section w3-round-large" type="submit">
+          <i class="fa fa-paper-plane"></i> VERSTUUR BERICHT
+        </button>
+        <button id="contactCancel2" class="w3-button small-on-small w3-red w3-left w3-section w3-round-large" onclick="document.getElementById('contact2').style.display='none'">
+          <i class="fa fa-times"></i> Annuleer
+        </button>
+      </form>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <div id="verzonden" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4 w3-round-xlarge" style="width: 50%">
+      <header class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('verzonden').style.display='none'" 
+        class="w3-display-topright w3-button w3-round-xxlarge"><i class="w3-large fas fa-window-close"></i></span>
+        <h2>Bericht:</h2>
+      </header>
+      <div class="w3-container w3-center">
+        <table class="berichttab">
+          <tr><td><i>Naam:</i></td><td id="NaamVal"></td></tr>
+          <tr><td><i>E-mail:</i></td><td id="EmailVal"></td></tr>
+          <tr><td><i>Bericht tekst:</i></td><td id="BerichtVal"></td></tr>
+        </table>
+      </div>
+      <div class="w3-container w3-center w3-large" id="verzendText"></div>
+      <footer class="w3-container w3-padding-16">
+        <!-- <button onclick="document.getElementById('verzonden').style.display='none'" type="button" class="w3-button w3-red"><i class="fas fa-times"></i> Annuleer</button> -->
+        <button onclick="document.getElementById('contactForm').reset(); document.getElementById('contactForm2').reset(); document.getElementById('verzonden').style.display='none'" type="button" class="w3-button w3-green w3-right"><i class="fas fa-check"></i> OK</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <div id="concepten" class="w3-modal" onclick="document.getElementById('concepten').style.display='none'">
+    <div class="w3-modal-content w3-yellow w3-animate-zoom w3-card-4 w3-round-xlarge" style="background-color: white !important; padding: 24px;">
+      <header class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('concepten').style.display='none'" 
+        class="w3-display-topright w3-button w3-round-xxlarge"><i class="w3-large fas fa-window-close"></i></span>
+	<h3>Basisconcepten</h3>
+      </header>
+	  <p>Leren begint vanaf het moment dat je bestaat en je jezelf en de dingen om je heen begint te ervaren. In de <i><b>school van het leven</b></i> ontdek je de wereld door <b>te voelen</b>, <b>proeven</b>, <b>horen</b>, <b>ruiken</b> en <b>te zien</b>.</p> 
+	  <p>Als je <i><b>georiënteerd</b></i> bent, doe je spelenderwijs belangrijke <b>levenslessen</b> op waaronder <b><u>basisconcepten</u></b> zoals <b>verandering</b> en <b>oorzaak en gevolg</b>. Zo word je je bewust van jezelf en van de wereld om je heen.</p> 
+	  <p>Ben je vaak <i><b>gedesoriënteerd</b></i> dan ervaar je de wereld niet zoals die echt is, maar zoals je denkt dat hij is (alternatieve realiteit). Dan komen levenslessen <b><u>niet</b></u>, <b><u>onvoldoende</b></u> of <b><u>vervormd</b></u> binnen. Daardoor heb je moeite met het begrijpen van hoe de wereld werkt en wat jouw plaats daarin is.</p>
+      <p><b>Met de Davisgereedschappen ben je in staat om de desoriëntatie te stoppen en kun je je deze levenslessen weer eigen maken.</b></p>  
+      <table class="lessen2">
+        <tr>
+          <th>Concept</th>
+          <th>Les in het echte leven:</th>
+          <th>Les in de alternatieve realiteit:</th>
+        </tr><tr>
+          <td>Verandering</td>
+          <td>Iets wordt iets anders.</td>
+          <td>Alles is er gewoon.</td>
+        </tr><tr>
+          <td>Consequentie</td>
+          <td>Iets dat gebeurt als gevolg van iets anders.</td>
+          <td>Alles kan gebeuren.</td>
+        </tr><tr>
+          <td>Oorzaak en</td>
+          <td>Iets brengt iets anders teweeg.</td>
+          <td>Alles is er gewoon.</td>
+        </tr><tr>
+          <td>Gevolg</td>
+          <td>Iets gebeurt door iets anders.</td>
+          <td>Alles kan gebeuren.</td>
+        </tr><tr>
+          <td>Voor</td>
+          <td>Gebeurde eerder.</td>
+          <td>Alleen het nu bestaat.</td>
+        </tr><tr>
+          <td>Na</td>
+          <td>Gebeurde later.</td>
+          <td>Alleen het nu bestaat.</td>
+        </tr><tr>
+          <td>Tijd</td>
+          <td>Het meten van verandering (aan de hand van een standaard).</td>
+          <td>Alleen het nu bestaat.</td>
+        </tr><tr>
+          <td>Volgorde</td>
+          <td>De manier waarop dingen elkaar volgen, de een na de ander.</td>
+          <td>Alles is er gewoon.</td>
+        </tr><tr>
+          <td>Orde</td>
+          <td>Dingen op hun juiste plaats, in de juiste positie en in de juiste toestand.</td>
+          <td>Dingen zijn waar ze zijn.<br />Dingen zijn zoals ze zijn. </td>
+        </tr><tr>
+          <td>Wanorde</td>
+          <td>Dingen niet op hun juiste plaats, niet in de juiste positie of niet in de juiste toestand.</td>
+          <td>Dingen zijn waar ze zijn.<br />Dingen zijn zoals ze zijn. </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <div id="gereedschappen" class="w3-modal" onclick="document.getElementById('gereedschappen').style.display='none'">
+    <div class="w3-modal-content w3-yellow w3-animate-zoom w3-card-4 w3-round-xlarge" style="background-color: white !important; padding: 24px;">
+      <header class="w3-container w3-padding-16">
+        <span onclick="document.getElementById('gereedschappen').style.display='none'" 
+        class="w3-display-topright w3-button w3-round-xxlarge"><i class="w3-large fas fa-window-close"></i></span>
+	<h3>Davis-gereedschappen</h3>
+      </header>
+      <table class="gereedschappen">
+        <tr>
+          <th>Orienteren</th>
+          <th>Loslaten</th>
+          <th>Energie doseren</th>
+        </tr><tr>
+          <td>
+            Je leert met behulp van een oriëntatie-techniek om effectief en ontspannen te focussen.
+           </td>
+          <td>
+            Met een eenvoudige ontspannings-techniek  leer je om spanning los te laten om ontspannen en gefocust te kunnen werken.
+          </td>
+          <td>
+		  Met behulp van een energiemeter leer je om je energie aan te passen aan de activiteit of situatie. 
+		  </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+
+var logo     = document.getElementById("logo");
+var navbar   = document.getElementById("navbar");
+var knoppen  = document.getElementById("knoppen");
+var sticky   = navbar.offsetTop;
+
+var navbarcont = document.getElementById("navbarcont");
+
+var topKnop2 = document.getElementById("topKnop2");
+var contactKnop2 = document.getElementById("contactKnop2");
+
+var pagetwo = document.getElementById("paginatwee");
+var stoornis = document.getElementById("stoornis");
+var fader    = document.getElementById("fader");
+
+var modal = document.getElementById('concepten');
+
+var topKnop = document.getElementById("topKnop");
+var contactKnop = document.getElementById("contactKnop");
+var pagetwo = document.getElementById("paginatwee");
+var smallNav  = document.getElementById("smallNav");
+
+function w3show(elem) {
+  if (elem.className.indexOf("w3-show") == -1) {
+    elem.className += " w3-show";
+  }
+}
+
+function w3hide(elem) {
+  elem.className = elem.className.replace(" w3-show", "");
+}
+
+function toggleFunction() {
+    if (smallNav.className.indexOf("w3-show") == -1) {
+        smallNav.className += " w3-show";
+    } else {
+        smallNav.className = smallNav.className.replace(" w3-show", "");
+    }
+}
+
+function accordion(e) {
+  e = e || window.event;
+  var targ = e.target || e.srcElement || e;
+  if (targ.nodeType == 3) targ = targ.parentNode;
+  var x = targ.nextElementSibling;
+  
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      targ.className += " open";
+  } else {
+      x.className = x.className.replace(" w3-show", "");
+      targ.className = targ.className.replace("open", "");
+  }
+  rellaxAll();
+}
+
+
+function scrollFunction() {
+  if (window.pageYOffset >= sticky) {
+    logo.style.width = "80px";
+    logo.style.marginTop = "-10px";
+    navbarcont.style.position ="fixed";
+    navbar.style.marginTop = "0px";
+    knoppen.style.marginLeft = "90px";
+    const bottom = stoornis.getBoundingClientRect().bottom;
+    if (bottom > 150) {
+    	fader.style.opacity = 0;
+    } else if (bottom < -100) {
+    	fader.style.opacity = 1;
+    } else {
+        fader.style.opacity = (0 - (bottom - 150)) / 250;
+    }
+    const bottom2 = pagetwo.getBoundingClientRect().bottom;
+    if (bottom2 < 150) {
+        w3show(contactKnop)
+        w3show(topKnop)
+        w3show(contactKnop2);
+        w3show(topKnop2);
+    } else {
+        w3hide(contactKnop2);
+        w3hide(topKnop2);
+        w3hide(contactKnop)
+        w3hide(topKnop)
+    }
+    rellaxAll();
+  } else {
+    logo.style.width = (180 - document.documentElement.scrollTop) + "px";
+    logo.style.marginTop = (-110 + document.documentElement.scrollTop) + "px";
+    navbarcont.style.position ="absolute";
+    navbar.style.marginTop = "100px";
+    knoppen.style.marginLeft = 105 + (100 - document.documentElement.scrollTop) * 0.85 + "px";
+  }
+}
+
+function ajaxpost () {
+  var form = document.getElementById("contactForm");
+  var data = new FormData(form);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "berichtje");
+  xhr.onload = function () { console.log(this.response); };
+  xhr.send(data);
+ 
+  return false;
+}
+
+function fetchpost (formName) {
+  if (formName === undefined) {
+    formName = "contactForm";
+  }
+  var data = new FormData(document.getElementById(formName));
+  document.getElementById("contactSubmit").disabled = true;
+  document.getElementById("contactSubmit2").disabled = true;
+  document.getElementById("contactCancel2").disabled = true;
+  fetch("berichtje.php", {
+    method: "post",
+    body: data
+  })
+  .then((res) => { return res.text(); })
+  .then((txt) => {
+    var data = new FormData(document.getElementById(formName));
+    document.getElementById("NaamVal").innerHTML = data.get('Naam');
+    document.getElementById("EmailVal").innerHTML = data.get('E-mail');
+    document.getElementById("BerichtVal").innerHTML = data.get('Berichtje');
+    document.getElementById("verzendText").innerHTML = txt;
+    document.getElementById("contact2").style.display='none'
+    document.getElementById("verzonden").style.display = "block";
+    document.getElementById("contactSubmit").disabled = false;
+    document.getElementById("contactSubmit2").disabled = false;
+    document.getElementById("contactCancel2").disabled = false;
+  })
+  .catch((err) => {
+  	var data = new FormData(document.getElementById(formName));
+    document.getElementById("NaamVal").innerHTML = data.get('Naam');
+    document.getElementById("EmailVal").innerHTML = data.get('E-mail');
+    document.getElementById("BerichtVal").innerHTML = data.get('Berichtje');
+    document.getElementById("verzendText").innerHTML = "<p><i class=\"fas fa-exclamation-triangle w3-text-red\"></i> Er ging iets mis! Je bericht is niet ontvangen!</p><p>" + err + "</p>";
+    document.getElementById("contact2").style.display='none'
+    document.getElementById("verzonden").style.display = "block";
+    document.getElementById("contactSubmit").disabled = false;
+    document.getElementById("contactSubmit2").disabled = false;
+    document.getElementById("contactCancel2").disabled = false;
+  });
+  return false;
+}
+
+var contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("focus", myFocusFunction, true);
+contactForm.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    w3hide(navbarcont);
+  }
+}
+function myBlurFunction() {
+  w3show(navbarcont);
+}
+
+function relScroll(move, stil) {
+  const box = stil.getBoundingClientRect();
+  if (box.bottom < 0 || box.top > window.innerHeight)
+    return;
+
+  move.style.marginTop = Math.round((box.top - 110 + box.height) / (window.innerHeight - 110 + box.height) * box.height) + "px";
+}
+
+function passBy(move, ref, amount) {
+  if ((window.innerWidth - 110 - amount) < amount) {
+    move.style.marginTop = "0px";
+    return;
+  }
+  const m = parseInt(ref.style.marginTop, 10);
+  if (m > amount)
+    move.style.marginTop = "0px";
+  else
+    move.style.marginTop = Math.round(amount - m) + "px";
+}
+
+function rellax(elem) {
+  const box = elem.getBoundingClientRect();
+  if (box.bottom < 0)
+    return 1;
+  else if (box.top > window.innerHeight)
+    return 0;
+
+  const row = elem.parentElement.parentElement.children[0].getBoundingClientRect();
+  const row_remain = row.height - box.height;
+  if (row.top > 110) {
+    elem.style.marginTop = 0;
+    return 0;
+  } else if (row.top < 110 - row_remain) {
+    elem.style.marginTop = row_remain + "px";
+    return 1;
+  } else {
+    const pos = (110 - row.top) / row_remain;
+    const view_remain = window.innerHeight - 110 - box.height;
+    var remain = row.bottom - 110 - box.height;
+         if (remain < 0)            remain = 0;
+    else if (remain > view_remain)  remain = view_remain;
+    elem.style.marginTop = ((110 - row.top) + (pos * remain)) + "px";
+    return pos;
+  }
+}
+
+var taal_en_beeld = document.getElementById("taal-en-beeld");
+var taal_beeld    = document.getElementById("taal-beeld");
+var jongetje      = document.getElementById("jongetje");
+var gereedschap   = document.getElementById("gereedschap");
+var orienteren    = document.getElementById("orienteren");
+var loslaten      = document.getElementById("loslaten");
+var doseren       = document.getElementById("doseren");
+var gids          = document.getElementById("gids");
+var ezelsbrug     = document.getElementById("ezelsbrug");
+var sherpa        = document.getElementById("sherpa");
+var kind          = document.getElementById("kind");
+var sherpaimg     = document.getElementById("sherpaimg");
+var groei     = document.getElementById("groei");
+function rellaxAll() {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    taal_en_beeld.style.marginTop = 0;
+    loslaten.style.marginTop = 0;
+    doseren.style.marginTop = 0;
+    gereedschap.style.marginTop = 0;
+    gids.style.marginTop = 0;
+    ezelsbrug.style.marginTop = 0;
+    sherpa.style.marginTop = 0;
+  } else {
+    rellax(taal_en_beeld);
+    passBy(loslaten, gereedschap, 120);
+    passBy(doseren, gereedschap, 240);
+    rellax(gereedschap);
+    rellax(gids);
+    rellax(ezelsbrug);
+    rellax(sherpa);
+	rellax(groei);
+  }
+  relScroll(jongetje, taal_beeld);
+  relScroll(sherpaimg, kind);
+}
+
+</script>
+</body>
+</html>

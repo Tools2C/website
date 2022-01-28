@@ -1,0 +1,345 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;} */
+body, html {
+  height: 100%;
+}
+
+table { border-spacing: 0; }
+
+/* Create a Parallax Effect */
+.stilbeeld {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg {
+  min-height: 100%;
+}
+
+#logo {
+  width: 180px;
+  margin-left: 16px;
+  margin-top: -110px;
+  transition: 0.2s;
+}
+
+#knoppen {
+  transition: 0.2s;
+}
+
+.bg-donkergroen,.bg-donkergroen:hover{color:#fff!important;background-color:#030!important}
+#navbar {
+  /* background-image: url('balk-groen.png'); */
+  min-height: 100%;
+}
+.icons {
+  display: none;
+}
+
+table.lessen {
+  background-color: #fffff8;
+  min-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+  padding: 1em;
+  opacity: 0.92;
+}
+
+table.lessen2 td, table.lessen td {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  vertical-align: top;
+}
+
+table.lessen2 th, table.lessen th {
+  border-bottom: 2px solid black;
+  text-align: left;
+}
+
+table#voordelen {
+  background-color: white;
+  min-width: 80%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+  padding: 1em;
+  opacity: 0.8;
+}
+table#voordelen td {
+  vertical-align: top;
+}
+table#voordelen th {
+  border-bottom: 2px solid black;
+  text-align: left;
+}
+table#voordelen ul {
+  margin: 0;
+  padding-left: 1em;
+}
+table#voordelen tr td:first-child li  {
+  list-style: circle outside none;
+}
+
+/*
+table#voordelen tr td + td li {
+  list-style: square outside none;
+}
+*/
+
+video#poemeltje {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote, .quoteblok {
+  font-family: "MV Boli";
+}
+
+.quoteblok{
+  display: none;
+  background-color: #bdcbc4;
+}
+
+.quote b {
+  font-family: sans-serif;
+}
+
+@media (min-width:993px){ .quote, .quoteblok { font-size: x-large; } }
+@media (max-width:992px) and (min-width:601px){ .quote, .quoteblok { font-size: large; } }
+@media (max-width:600px){ .quote, .quoteblok { font-size: large; } .topform { width: 90%; } .small-on-small { font-size:12px!important } }
+@media (max-height:700px){ .bgimg-1 { min-height: 125%; } }
+
+.topform { background-color: rgba(0, 0, 0, 0.6) !important; }
+
+h1::before, h2::before {
+  content: "- ";
+}
+h1::after, h2::after {
+  content: " -";
+}
+
+.accordion {
+  font-size: 24px;
+  color: green;
+  border-bottom: solid 1px green;
+  padding-bottom: 1px;
+  margin-bottom: 0.5em;
+}
+.accordion:hover {
+  /* background-color: #f8f8f8; */
+  border-bottom: solid 2px green;
+  padding-bottom: 0px;
+}
+.accordion::before {
+  content: "↓ "
+}
+.open::before {
+  content: "↑ "
+}
+
+h2 { font-size: 24px; } 
+
+h1, h2 {
+  /* text-align: center; */
+  margin-left: 1em;
+}
+
+/*
+b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+div.w3-row div.w3-half {
+  padding-right: 8px;
+}
+div.w3-row div.w3-half + div.w3-half {
+  padding-right: 0;
+  padding-left: 8px;
+}
+
+.w3-content .w3-row .w3-half a {
+  color: green;
+  text-decoration: none;
+}
+
+.w3-content .w3-row .w3-half a:hover {
+  border-bottom: solid 2px green;
+}
+
+.naw-link a {
+  text-decoration: none;
+}
+
+.naw-link a:hover {
+  border-bottom: solid 2px white;
+}
+
+#naw td + td {
+  vertical-align: baseline;
+}
+@media (min-width:601px) {
+  .vogelvraagteken {
+    background-image: url('Photos/ilkka-karkkainen-yn8aHOdNLZo-unsplash.jpg'); 
+    min-height: 44.4444vw;
+    background-position: 50% 100px;
+    background-repeat: repeat;
+    background-size: 33.3333%;
+  }
+}
+@media (max-width:600px) {
+  .vogelvraagteken {
+    background-image: url('Photos/ilkka-karkkainen-yn8aHOdNLZo-unsplash.jpg');
+    min-height: 100%;
+    background-position: 50% 100px;
+    background-repeat: repeat;
+    background-size: 100%;
+  }
+}
+
+table.berichttab td {
+  text-align: right !important;
+  vertical-align: top;
+  padding-right: 8px;
+}
+
+table.berichttab td + td {
+  text-align: left !important;
+  padding-right: 0;
+}
+
+button.w3-green:disabled , button.w3-black:disabled , button.w3-red:disabled {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+/* body { color: #777; } */
+body,h1,h2,h3,h4,h5,h6 {font-family: Montserrat, sans-serif;}
+
+table.gereedschappen {
+  width: 100%;
+}
+
+table.gereedschappen th, table.gereedschappen td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+.centerChild {
+  align-self: center;
+}
+
+#school { width: 100%; }
+#leesrijp { text-align: center; height: 200px; }
+@media (min-width:601px){ #school { margin-top: 250px; } }
+@media (max-width:600px){ #school { margin-top:   0px; } }
+
+
+@keyframes schoolanihoe {
+    0%  { color: rgba(0, 0, 0, 0.0); }
+   10%  { color: rgba(0, 0, 0, 0.0); }
+   20%  { color: rgba(0, 0, 0, 1.0); }
+   90%  { color: rgba(0, 0, 0, 1.0); }
+  100%  { color: rgba(0, 0, 0, 0.0); }
+}
+#schooldaghoe {
+  color: rgba(0, 0, 0, 0.0);
+  animation-name: schoolanihoe;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes schoolaniniets {
+    0%  { color: rgba(0, 0, 0, 0.0); }
+   50%  { color: rgba(0, 0, 0, 0.0); }
+   60%  { color: rgba(0, 0, 0, 1.0); }
+   90%  { color: rgba(0, 0, 0, 1.0); }
+  100%  { color: rgba(0, 0, 0, 0.0); }
+}
+#schooldagniets {
+  color: rgba(0, 0, 0, 0.0);
+  animation-name: schoolaniniets;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoveranirijp {
+    0%    { color: rgba(0, 0, 0, 0.0); }
+   25%    { color: rgba(0, 0, 0, 0.0); }
+   35%    { color: rgba(0, 0, 0, 1.0); }
+   90%    { color: rgba(0, 0, 0, 1.0); }
+  100%    { color: rgba(0, 0, 0, 0.0); }
+}
+
+@keyframes zoveraninogniet {
+    0%    { color: rgba(0, 0, 0, 0.0); }
+   50%    { color: rgba(0, 0, 0, 0.0); }
+   60%    { color: rgba(0, 0, 0, 1.0); }
+   90%    { color: rgba(0, 0, 0, 1.0); }
+  100%    { color: rgba(0, 0, 0, 0.0); }
+}
+
+.leesrijpimg { animation-duration: 21s; }
+#lrhuizen    { animation-delay:     0s; }
+#lrflessen   { animation-delay:     7s; }
+#lrbomen     { animation-delay:    14s; }
+.zover       { animation-duration:  7s; }
+
+#rijp        { animation-name: zoveranirijp; }
+#nogniet     { animation-name: zoveraninogniet; }
+
+@keyframes lranibig {
+    0%    { opacity: 0.0; left:  100%; }
+   10%    { opacity: 1.0; left:    0%; }
+   33.33% { opacity: 1.0; left:    0%; }
+   36.33% { opacity: 0.0; left:  -20%; }
+  100%    { opacity: 0.0; left:    0%; }
+}
+
+@keyframes lranismall {
+    0%    { opacity: 0.0; }
+   10%    { opacity: 1.0; }
+   33.33% { opacity: 1.0; }
+   36.33% { opacity: 0.0; }
+  100%    { opacity: 0.0; }
+}
+
+.leesrijpimg {
+  animation-duration: 21s;
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: 0;
+  animation-iteration-count: infinite;
+  opacity: 0.0;
+}
+
+@media (min-width:601px){ .leesrijpimg { animation-name: lranibig; } }
+@media (max-width:600px){ .leesrijpimg { animation-name: lranismall; } }
+
+.zover {
+  color: rgba(0, 0, 0, 0.0);
+  animation-iteration-count: infinite;
+  float: left;
+  width: 49.99999%;
+}
+
+.leesrijpimg img { width: 100% }
+
+table#inner td, table#inner th {
+  text-align: right;
+  padding: 1ex;
+}

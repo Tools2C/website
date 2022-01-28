@@ -1,0 +1,4 @@
+# Negeer alles in deze directory
+*
+# Behalve dit bestand
+!.gitignore
