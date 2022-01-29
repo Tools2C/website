@@ -1109,6 +1109,15 @@ function rellax(elem) {
   }
 }
 
+function parallax(elem) {
+  const box = elem.getBoundingClientRect();
+  if (box.bottom < 0)
+    return 1;
+  else if (box.top > window.innerHeight)
+    return 0;
+  elem.style.objectPosition = "0 " + (0 - box.top) + "px";
+}
+
 var taal_en_beeld = document.getElementById("taal-en-beeld");
 var taal_beeld    = document.getElementById("taal-beeld");
 var jongetje      = document.getElementById("jongetje");
@@ -1121,7 +1130,8 @@ var ezelsbrug     = document.getElementById("ezelsbrug");
 var sherpa        = document.getElementById("sherpa");
 var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
-var groei     = document.getElementById("groei");
+var groei         = document.getElementById("groei");
+var poemeltje     = document.getElementById("poemeltje");
 function rellaxAll() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     taal_en_beeld.style.marginTop = 0;
@@ -1143,6 +1153,7 @@ function rellaxAll() {
   }
   relScroll(jongetje, taal_beeld);
   relScroll(sherpaimg, kind);
+  parallax(poemeltje);
 }
 
 </script>
