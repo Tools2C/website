@@ -186,9 +186,8 @@ div.w3-row div.w3-half + div.w3-half {
 .w3-modal .naw-link a:hover {
   border-bottom: solid 2px green;
 }
-
-#naw td + td {
-  vertical-align: baseline;
+footer td + td {
+  padding-left: 4px;
 }
 @media (min-width:601px) {
   .vogelvraagteken {
