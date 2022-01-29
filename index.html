@@ -85,7 +85,6 @@
   </div>
 -->
   <div class="w3-display-bottommiddle" id="paginatwee"></div>
-  <div class="w3-display-bottommiddle" id="welkom" style="padding-bottom: 100px"></div>
 </div>
 
 <!-- Welkom - Wat is Davis Counseling -->
@@ -106,10 +105,10 @@
 	  <p>Davis Counseling legt op een liefdevolle en respectvolle manier een stevige basis voor het leren en het leven waardoor je zelfvertrouwen een boost krijgt.</p>
 	  <p>Er ontstaat weer ruimte om te leren. Zonder jarenlange bijles, zonder eindeloze herhaling van dezelfde stof met weinig en trage vooruitgang. 
 	  En het allermooiste is dat je je bijzondere manier van denken niet hoeft op te geven. Je krijgt er alleen meer controle over.</p> 
-  	  <div style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%; background-image: url('bg/astrid-hek.jpg')">&nbsp;</div>
- 
-	  
-	  <div class="accordion" onclick="accordion(this)">
+
+    <div id="astrid" style="position: relative; margin-top: -110px; margin-bottom: 130px;"></div>
+  	<div style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%; background-image: url('bg/astrid-hek.jpg')">&nbsp;</div>
+	  <div id="overmij" class="accordion" onclick="accordion(this)">
       Over mij
     </div>
     <div class="w3-hide">
@@ -968,6 +967,15 @@ function accordion(e) {
   rellaxAll();
 }
 
+function overMij() {
+  var overmij = document.getElementById("overmij");
+  var x = overmij.nextElementSibling;
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      overmij.className += " open";
+  }
+  return true;
+}
 
 function scrollFunction() {
   if (window.pageYOffset >= sticky) {
