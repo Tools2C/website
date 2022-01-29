@@ -488,6 +488,13 @@ Als je verwarring wegneemt, verdwijnen de oude oplossingen vanzelf.</p>
     
     </div>
     <div class="w3-half">
+      <div id="station" class="w3-display-container">
+        <div id="perron" class="w3-display-topleft" style="background-image: url('img/perron.png')"></div>
+        <div id="trein-container" class="w3-display-topleft">
+          <img id="trein" src="img/trein.png">
+        </div>
+        <img id="jongen-in-trein" src="img/jongen-in-trein.png">
+      </div>
     </div>
   </div>
 </div>
@@ -1189,6 +1196,7 @@ var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
 var groei         = document.getElementById("groei");
 var poemeltje     = document.getElementById("poemeltje");
+var station       = document.getElementById("station");
 function rellaxAll() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     taal_en_beeld.style.marginTop = 0;
@@ -1198,6 +1206,7 @@ function rellaxAll() {
     gids.style.marginTop = 0;
     /* ezelsbrug.style.marginTop = 0; */
     sherpa.style.marginTop = 0;
+    station.style.marginTop = 0;
   } else {
     rellax(taal_en_beeld);
     passBy(loslaten, gereedschap, 120);
@@ -1206,7 +1215,8 @@ function rellaxAll() {
     rellax(gids);
     /* rellax(ezelsbrug); */
     rellax(sherpa);
-	rellax(groei);
+	  rellax(groei);
+	  rellax(station);
   }
   relScroll(jongetje, taal_beeld);
   relScroll(sherpaimg, kind);

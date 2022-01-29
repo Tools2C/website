@@ -355,3 +355,34 @@ table#inner td, table#inner th {
   text-align: right;
   padding: 1ex;
 }
+
+img#jongen-in-trein { width: 100%; }
+div#trein-container {
+	overflow: hidden;
+	z-index: -1;
+}
+
+@keyframes treinrijden {
+    0%    { margin-left: -140%; }
+   20%    { margin-left: -85%; }
+   50%    { margin-left: -85%; }
+  100%    { margin-left: 180%; }
+}
+
+img#trein { 
+	width: 150%;
+	z-index: -1;
+	margin-left: -120%; /* voorbij op 60%, nog niet op -120% */
+	animation-name: treinrijden;
+	animation-duration: 21s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#perron {
+  width: 70%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -2;
+}

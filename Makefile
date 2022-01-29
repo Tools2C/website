@@ -8,7 +8,8 @@ LOGOS = img/logo.png img/logo.ico
 ACHTERGRONDEN = bg/handen.jpg bg/astrid-hek.jpg bg/boog.jpg bg/op-bankje.jpg \
 		bg/in-gras.jpg bg/radslag.jpg
 FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
-TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png
+TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
+		img/perron.png img/jongen-in-trein.png
 TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
 		$(TEKENINGEN_BREED)
@@ -64,5 +65,8 @@ img/groei.png: originelen/groei.png
 
 img/ezelsbrug.png: originelen/ezelsbrug.png
 img/gids.png: originelen/gids.png
+img/trein.png: originelen/trein.png
+img/perron.png: originelen/perron\ 2.png
+img/jongen-in-trein.png: originelen/trein\ jongen.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
