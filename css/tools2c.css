@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+/* html { scroll-behavior: smooth; } */
 
 /* body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;} */
 body, html {
@@ -117,6 +115,7 @@ video#poemeltje {
 @media (max-height:700px){ .bgimg-1 { min-height: 125%; } }
 
 .topform { background-color: rgba(0, 0, 0, 0.6) !important; }
+.fifty { margin: 2em 0; }
 
 h1::before, h2::before {
   content: "- ";
