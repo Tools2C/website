@@ -62,30 +62,29 @@ table.lessen2 th, table.lessen th {
   text-align: left;
 }
 
-table#voordelen {
-  background-color: white;
-  min-width: 80%;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 1em;
-  padding: 1em;
-  opacity: 0.8;
-}
 table#voordelen td {
+  padding: 8px 5px;
   vertical-align: top;
 }
 table#voordelen th {
-  border-bottom: 2px solid black;
+  padding: 8px 5px;
+  border-bottom: 2px solid white;
+  font-weight: 900;
   text-align: left;
 }
 table#voordelen ul {
   margin: 0;
   padding-left: 1em;
 }
+table#voordelen th  li  {
+  list-style: none outside none;
+}
+
+/*
 table#voordelen tr td:first-child li  {
   list-style: circle outside none;
 }
+*/
 
 /*
 table#voordelen tr td + td li {
@@ -112,8 +111,8 @@ video#poemeltje {
   font-family: sans-serif;
 }
 
-@media (min-width:993px){ .quote, .quoteblok { font-size: x-large; } }
-@media (max-width:992px) and (min-width:601px){ .quote, .quoteblok { font-size: large; } }
+@media (min-width:993px){ .quote, .quoteblok { font-size: x-large; } .fifty { width: 50%; } }
+@media (max-width:992px) and (min-width:601px){ .quote, .quoteblok { font-size: large; } .fifty { width: 70%; } }
 @media (max-width:600px){ .quote, .quoteblok { font-size: large; } .topform { width: 90%; } .small-on-small { font-size:12px!important } }
 @media (max-height:700px){ .bgimg-1 { min-height: 125%; } }
 
