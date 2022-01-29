@@ -139,8 +139,19 @@ h1::after, h2::after {
 .accordion::before {
   content: "↓ "
 }
-.open::before {
+.accordion.open::before {
   content: "↑ "
+}
+
+div#navbarcont a.open i.fa-angle-down:before { content: "\f106"; }
+/* div#smallNav a.open { color:#000;background-color:#ccc;opacity:0.60 } */
+/* div#smallNav a.open:hover { opacity:0.70 } */
+div.submenu a {
+  padding-left: 36px !important;
+}
+div#submenu {
+  float: right;
+  padding-right: 34.5px;
 }
 
 h2 { font-size: 24px; } 
