@@ -70,3 +70,7 @@ img/perron.png: originelen/perron\ 2.png
 img/jongen-in-trein.png: originelen/trein\ jongen.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
+
+tidy: tidy.html
+tidy.html: index.html
+	tidy -i -w 0 --drop-proprietary-attributes no --drop-empty-elements no $< > $@
