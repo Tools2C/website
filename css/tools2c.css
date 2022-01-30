@@ -243,6 +243,7 @@ table.gereedschappen {
 table.gereedschappen th, table.gereedschappen td {
   text-align: left;
   vertical-align: top;
+  padding: 8px;
 }
 
 .centerContainer {

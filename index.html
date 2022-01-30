@@ -321,17 +321,17 @@ Als je verwarring wegneemt, verdwijnen de oude oplossingen vanzelf.</p>
       -->
        <div class="w3-row" onclick="document.getElementById('gereedschappen').style.display='block'" id="gereedschap">
         <div style="border-bottom: 2px solid black; padding-bottom: 2px; margin-bottom: 0.5em">Davis-gereedschappen:</div>
-        <div style="float: left; text-align: center; width: 33.33333%" id="orienteren">
+        <div style="float: left; width: 33.33333%" id="orienteren">
           <img src="svg/orienteren.svg" style="width: 95%">
-          <p>Oriënteren</p>
+          <p style="text-align: center">Oriënteren</p>
         </div>
-        <div style="width: 33.33333%; float: left; margin-top: 120px" id="loslaten">
+        <div style="width: 33.33333%; float: left; margin-top: 180px" id="loslaten">
           <img src="svg/ontspannen.svg" style="width: 95%">
-          <p>Loslaten</p>
+          <p style="text-align: center">Loslaten</p>
         </div>
-        <div style="width: 33.33333%; float: left; margin-top: 240px" id="doseren">
+        <div style="width: 33.33333%; float: left; margin-top: 360px" id="doseren">
           <img src="svg/energie.svg" style="width: 95%">
-          <p>Energie<br>doseren</p>
+          <p style="text-align: center">Energie<br>doseren</p>
         </div>
       </div>
 
@@ -871,9 +871,18 @@ Als je verwarring wegneemt, verdwijnen de oude oplossingen vanzelf.</p>
       </header>
       <table class="gereedschappen">
         <tr>
-          <th>Orienteren</th>
-          <th>Loslaten</th>
-          <th>Energie doseren</th>
+          <th style="width: 33.33333%; text-align: center">
+            Oriënteren<br />
+            <img src="svg/orienteren.svg" style="width: 95%; max-width: 150px; padding: 4px 0">
+          </th>
+          <th style="width: 33.33333%; text-align: center">
+            Loslaten<br />
+            <img src="svg/ontspannen.svg" style="width: 95%; max-width: 150px; padding: 4px 0">
+          </th>
+          <th style="width: 33.33333%; text-align: center">
+            Energie doseren<br />
+            <img src="svg/energie.svg" style="width: 95%; max-width: 150px; padding: 4px 0">
+          </th>
         </tr><tr>
           <td>
             Je leert met behulp van een oriëntatie-techniek om effectief en ontspannen te focussen.
@@ -1209,8 +1218,8 @@ function rellaxAll() {
     station.style.marginTop = 0;
   } else {
     rellax(taal_en_beeld);
-    passBy(loslaten, gereedschap, 120);
-    passBy(doseren, gereedschap, 240);
+    passBy(loslaten, gereedschap, 180);
+    passBy(doseren, gereedschap, 360);
     rellax(gereedschap);
     rellax(gids);
     /* rellax(ezelsbrug); */
