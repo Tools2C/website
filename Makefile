@@ -14,7 +14,7 @@ TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
 		$(TEKENINGEN_BREED)
 
-all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN)
+all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
 
 video/poemeltje.jpg: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -vframes 1 -vf scale=$(VIDEOWIDTH):-2 -q:v 1 "$@"
@@ -73,4 +73,4 @@ $(TEKENINGEN_BREED):
 
 tidy: tidy.html
 tidy.html: index.html
-	tidy -i -w 0 --drop-proprietary-attributes no --drop-empty-elements no $< > $@
+	tidy -i -w 0 --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
