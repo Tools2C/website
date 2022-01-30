@@ -184,6 +184,12 @@ div.w3-row div.w3-half + div.w3-half {
   border-bottom: solid 2px green;
 }
 
+.w3-content .w3-row .w3-half a {
+  border-bottom: solid 1px green;
+  margin-bottom: 1px;
+}
+
+
 .naw-link a {
   text-decoration: none;
 }
