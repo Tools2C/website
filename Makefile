@@ -42,7 +42,7 @@ img/sm-de.jpg: originelen/Astrid\ Toorop\ SM\ de.jpg
 $(FOTOS):
 	convert "$<" -resize $(COL_WIDTH)x -quality $(BG_QUALITY) "$@"
 
-img/kind.png: originelen/kind.png
+img/kind.png: originelen/jongetje\ dun.png
 	convert "$<" -scale 100 -quality 91 -depth 4 -colorspace gray "$@"
 
 img/sherpa.png: originelen/sherpa\ dun.png
