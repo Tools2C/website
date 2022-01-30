@@ -1199,37 +1199,44 @@ var orienteren    = document.getElementById("orienteren");
 var loslaten      = document.getElementById("loslaten");
 var doseren       = document.getElementById("doseren");
 var gids          = document.getElementById("gids");
-/* var ezelsbrug     = document.getElementById("ezelsbrug"); */
+var ezelsbrug     = document.getElementById("ezelsbrug");
 var sherpa        = document.getElementById("sherpa");
 var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
 var groei         = document.getElementById("groei");
 var poemeltje     = document.getElementById("poemeltje");
 var station       = document.getElementById("station");
+
+function zetOpNul(elem) {
+  if (null !== elem && elem.style.marginTop != "0px")
+    elem.style.marginTop = "0px";
+}
 function rellaxAll() {
   if (window.matchMedia("(max-width: 600px)").matches) {
-    taal_en_beeld.style.marginTop = 0;
-    loslaten.style.marginTop = 0;
-    doseren.style.marginTop = 0;
-    gereedschap.style.marginTop = 0;
-    gids.style.marginTop = 0;
-    /* ezelsbrug.style.marginTop = 0; */
-    sherpa.style.marginTop = 0;
-    station.style.marginTop = 0;
+    zetOpNul(taal_en_beeld);
+    zetOpNul(loslaten);
+    zetOpNul(doseren);
+    zetOpNul(gereedschap);
+    zetOpNul(gids);
+    zetOpNul(ezelsbrug);
+    zetOpNul(sherpa);
+    zetOpNul(station);
   } else {
-    rellax(taal_en_beeld);
-    passBy(loslaten, gereedschap, 180);
-    passBy(doseren, gereedschap, 360);
-    rellax(gereedschap);
-    rellax(gids);
-    /* rellax(ezelsbrug); */
-    rellax(sherpa);
-	  rellax(groei);
-	  rellax(station);
+    if (null !== taal_en_beeld) rellax(taal_en_beeld);
+    if (null !== gereedschap) {
+      if (null !== loslaten) passBy(loslaten, gereedschap, 180);
+      if (null !== doseren)  passBy(doseren, gereedschap, 360);
+      rellax(gereedschap);
+    }
+    if (null !== gids)          rellax(gids);
+    if (null !== ezelsbrug)     rellax(ezelsbrug);
+    if (null !== sherpa)        rellax(sherpa);
+    if (null !== groei)         rellax(groei);
+    if (null !== station)       rellax(station);
   }
-  relScroll(jongetje, taal_beeld);
-  relScroll(sherpaimg, kind);
-  parallax(poemeltje);
+  if (null !== jongetje  && null !== taal_beeld) relScroll(jongetje, taal_beeld);
+  if (null !== sherpaimg && null !== kind)       relScroll(sherpaimg, kind);
+  if (null !== poemeltje)       parallax(poemeltje);
 }
 
 </script>
