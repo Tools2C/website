@@ -73,4 +73,4 @@ $(TEKENINGEN_BREED):
 
 tidy: tidy.html
 tidy.html: index.html
-	tidy -i -w 0 --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
+	tidy --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
