@@ -13,6 +13,7 @@ TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
 		img/out-of-the-box.png
 TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
+		img/in-de-verte.png \
 		$(TEKENINGEN_BREED)
 
 all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
@@ -63,6 +64,9 @@ img/jongetje-denken.png: originelen/jongetje-denken.png
 
 img/groei.png: originelen/groei.png
 	convert "$<" -quality 91 -depth 4 -colorspace gray "$@"
+
+img/in-de-verte.png: originelen/In\ de\ verte\ tekening.png
+	convert "$<" -scale 250 -quality 91 -depth 4 -colorspace gray "$@"
 
 img/ezelsbrug.png: originelen/ezelsbrug.png
 img/gids.png: originelen/gids.png
