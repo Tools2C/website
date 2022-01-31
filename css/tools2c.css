@@ -393,14 +393,16 @@ div#trein-container {
 }
 
 @keyframes treinrijden {
-    0%    { margin-left: -140%; }
-   20%    { margin-left: -85%; }
-   50%    { margin-left: -85%; }
-  100%    { margin-left: 180%; }
+    0%    { margin-left: -155%; }
+   20%    { margin-left: -95%; }
+   50%    { margin-left: -95%; }
+   99.99999% { margin-left: 180%; }
+  100%    { margin-left: -155%; }
 }
 
 img#trein { 
-	width: 160%;
+	width: 180%;
+	margin-top: -7%;
 	z-index: -1;
 	margin-left: -120%; /* voorbij op 60%, nog niet op -120% */
 	animation-name: treinrijden;
