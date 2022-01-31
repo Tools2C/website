@@ -261,8 +261,19 @@
       De ontdekking van Ron Davis
     </div>
 	<div class="w3-hide">
-	 <p>Hij ontdekte door zelfobservatie dat hij veel meer last had van vervormde waarneming als hij creatief bezig was. Hij dacht dan niet in woorden, maar razendsnel in beelden. Hij was dan gedesoriënteerd. 
+	 <p>Ron Davis ontdekte door zelfobservatie dat hij veel meer last had van <b>vervormde waarneming</b> als hij <b>creatief</b> bezig was. Hij dacht dan niet in woorden, maar razendsnel in beelden. Hij was dan gedesoriënteerd. 
 	   Het gevolg was dat letters bewogen en van de pagina leken af te drijven en dat tekst naar beneden toe steeds kleiner leek te worden.</p>
+	   <p><b>Iedereen is wel een gedesoriënteerd.</b> Bijvoorbeeld als je in een stilstaande trein zit en kijkt naar een vertrekkende trein op het spoor naast je. 
+	  <b> Je kunt dan het gevoel krijgen dat jouw trein beweegt.</b> Je hersens zien beweging en <b>vertalen dit als een bewegende sensatie</b> ook al staat jouw trein nog stil op het perron.</p>  
+
+      <div class="w3-display-container">
+        <div id="perron" class="w3-display-topleft" style="background-image: url('img/perron.png')"></div>
+        <div id="trein-container" class="w3-display-topleft">
+          <img id="trein" src="img/trein.png">
+        </div>
+        <img id="jongen-in-trein" src="img/jongen-in-trein.png">
+      </div>
+
      <p>Hij ontwikkelde voor zichzelf een techniek om die <b>desoriëntatie</b> tijdelijk <b>uit te schakelen</b> en merkte meteen een enorm verschil. Letters bewogen niet meer, hij zag voor het eerst spaties tussen de woorden.</p>
 	  <p>Deze doorbraak bleef niet onopgemerkt. Al snel bleek zijn aanpak ook bij anderen aan te slaan.</p>
       <p><b>Maar daarmee was hij er nog niet.</b> Nu hij zijn waarneming had gecorrigeerd, kon hij nog steeds niet vlot lezen. Vooral <b>kleine veel voorkomende woorden</b> bleven voor <b>verwarring</b> zorgen: <b>lidwoorden </b> en woorden als <b>aan, om, of</b>. Hij had er <b><u>geen</u> beeld</b> bij.</p>
@@ -435,9 +446,8 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
   <div class="w3-row">
     <div class="w3-half">
 	    <h3>Leren door zien</h3>
-    <p><b>Soms zijn dingen zo vanzelfsprekend dat je ze niet meer ziet.</b></p> <p>Daarom is het zo goed om jonge kinderen om je heen te hebben. Onbevangen en nieuwsgierig bestoken ze je met de lastigste vragen. Vragen waarop het antwoord vaak is 'Omdat het zo is' of 'Omdat ik het zeg'.</p>
-    <p>In de counseling creëer ik een sfeer waarbinnen alle vragen gesteld kunnen worden en doe ik er alles aan om samen met het kind tot antwoorden te komen. Ik laat zien en merken dat ook ik niet alle antwoorden paraat heb. Dat leren en ontwikkeling niet kan zonder fouten te maken.</p> </p> 
-<div class="centerContainer"><img src="img/in-de-verte.png" class="centerChild" style="width: 40%"> </div>
+    <p><b>Soms zijn dingen zo vanzelfsprekend dat je ze niet meer ziet.</b></p> <p>Daarom is het zo goed om jonge kinderen om je heen te hebben. <b>Onbevangen en nieuwsgierig</b> bestoken ze je met <b>de lastigste vragen</b>. Vragen waarop je eigenlijk zelf ook geen antwoord hebt. Vragen die vaak beantwoord worden met 'Omdat het zo is' of 'Omdat ik het zeg'.</p>
+    <p>In de counseling creëer ik een <b>sfeer waarbinnen alle vragen gesteld kunnen worden</b> en doe ik er alles aan om samen met het kind tot <b>echte antwoorden</b> te komen. Ik laat zien en merken dat ook ik niet alle antwoorden paraat heb. Dat leren en ontwikkeling niet kan zonder fouten te maken.</p> </p> 
 	
     <p>Ik blijf leren van elke counseling. Elke client geeft mij nieuwe inzichten in hoe dat eigenlijk werkt 'leren'. Een paar inzichten die ik zo heb opgedaan deel ik hieronder graag met je.</p> 
 	<div class="accordion" onclick="accordion(this)">
@@ -519,13 +529,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     
     </div>
     <div class="w3-half">
-      <div id="station" class="w3-display-container">
-        <div id="perron" class="w3-display-topleft" style="background-image: url('img/perron.png')"></div>
-        <div id="trein-container" class="w3-display-topleft">
-          <img id="trein" src="img/trein.png">
-        </div>
-        <img id="jongen-in-trein" src="img/jongen-in-trein.png">
-      </div>
+      <div id="station" class="centerContainer"><img src="img/in-de-verte.png" class="centerChild" style="width: 50%"> </div>
     </div>
   </div>
 </div>
@@ -757,10 +761,10 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 
 
 <div class="w3-half">
-      <div id="groei">
-        <img src="img/groei.png" style="width: 60%; margin-left: 20%; margin-right: 20%">
+      <div id="schaduw">
+        <img src="img/schaduw.png" style="width: 60%; margin-left: 20%; margin-right: 20%">
         <span class="quote">
-          Het enige wat hetzelfde blijft, is dat alles verandert.
+          De wereld verandert omdat ik besta.
         </span>
       </div>
     </div>
@@ -1237,7 +1241,7 @@ var ezelsbrug     = document.getElementById("ezelsbrug");
 var sherpa        = document.getElementById("sherpa");
 var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
-var groei         = document.getElementById("groei");
+var schaduw         = document.getElementById("schaduw");
 var poemeltje     = document.getElementById("poemeltje");
 var station       = document.getElementById("station");
 
@@ -1265,7 +1269,7 @@ function rellaxAll() {
     if (null !== gids)          rellax(gids);
     if (null !== ezelsbrug)     rellax(ezelsbrug);
     if (null !== sherpa)        rellax(sherpa);
-    if (null !== groei)         rellax(groei);
+    if (null !== schaduw)         rellax(schaduw);
     if (null !== station)       rellax(station);
   }
   if (null !== jongetje  && null !== taal_beeld) relScroll(jongetje, taal_beeld);

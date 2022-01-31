@@ -10,13 +10,17 @@ ACHTERGRONDEN = bg/handen.jpg bg/astrid-hek.jpg bg/boog.jpg bg/op-bankje.jpg \
 FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
 TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
 		img/perron.png img/jongen-in-trein.png img/ron-davis.png \
-		img/out-of-the-box.png
+		img/out-of-the-box.png img/schaduw.png
 TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
 		img/in-de-verte.png \
 		$(TEKENINGEN_BREED)
 
 all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
+
+tidy: tidy.html
+tidy.html: index.html
+	tidy --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
 
 video/poemeltje.jpg: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -vframes 1 -vf scale=$(VIDEOWIDTH):-2 -q:v 1 "$@"
@@ -75,9 +79,8 @@ img/perron.png: originelen/perron\ 2.png
 img/jongen-in-trein.png: originelen/trein\ jongen.png
 img/ron-davis.png: originelen/ron\ davis.jpg
 img/out-of-the-box.png: originelen/out\ of\ the\ box.png
+img/schaduw.png: originelen/schaduw.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
 
-tidy: tidy.html
-tidy.html: index.html
-	tidy --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
+

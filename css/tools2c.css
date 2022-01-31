@@ -77,6 +77,7 @@ table#voordelen ul {
 table#voordelen th  li  {
   list-style: none outside none;
 }
+table#voordelen .quote { color: white; }
 
 /*
 table#voordelen tr td:first-child li  {
