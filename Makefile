@@ -11,13 +11,12 @@ FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
 TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
 		img/perron.png img/jongen-in-trein.png img/ron-davis.png \
 		img/out-of-the-box.png img/peinzende-kinderen.png \
-		img/schaduw.png
+		img/schaduw.png img/in-de-verte.png
 ZELFDE_GROOTTE = img/rietje.png img/rechthoek.png img/cirkel.png img/half.png \
 		img/breuk.png img/eentweede.png img/nulkommavijf.png \
-		img/vijftigprocent.png img/taartje.png
+		img/vijftigprocent.png img/taartje.png img/groei.png
 TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
-		img/in-de-verte.png \
 		$(ZELFDE_GROOTTE) $(TEKENINGEN_BREED)
 
 all: tidy.html $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN)
@@ -71,12 +70,6 @@ img/taal-en-beeld.png: originelen/Taal-en-beeld.png
 img/jongetje-denken.png: originelen/jongetje-denken.png
 	convert "$<" -scale 300 -quality 91 -depth 4 -colorspace gray "$@"
 
-img/groei.png: originelen/groei.png
-	convert "$<" -quality 91 -depth 4 -colorspace gray "$@"
-
-img/in-de-verte.png: originelen/In\ de\ verte\ tekening.png
-	convert "$<" -scale 250 -quality 91 -depth 4 -colorspace gray "$@"
-
 img/ezelsbrug.png: originelen/ezelsbrug.png
 img/gids.png: originelen/gids.png
 img/trein.png: originelen/trein.png
@@ -86,6 +79,7 @@ img/ron-davis.png: originelen/ron\ davis.jpg
 img/out-of-the-box.png: originelen/out\ of\ the\ box.png
 img/peinzende-kinderen.png: originelen/peinzende\ kinderen.png
 img/schaduw.png: originelen/schaduw.png
+img/in-de-verte.png: originelen/In\ de\ verte\ tekening.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
 
