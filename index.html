@@ -675,6 +675,21 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
      </div>
   </div>
   <div class="w3-half">
+    <div id="peinzende-kinderen">
+      <img src="img/peinzende-kinderen.png" style="width: 100%; margin-top: 10px">
+
+      <img id="pk11" src="img/rechthoek.png" style="position: absolute; width: 10%; left: 6%; top: 9%; opacity: 0">
+      <img id="pk12" src="img/half.png" style="position: absolute; width: 12%; left: 5%; top: 9%; opacity: 0">
+      <img id="pk13" src="img/eentweede.png" style="position: absolute; width: 10%; left: 5%; top: 9%; opacity: 0">
+
+      <img id="pk21" src="img/rietje.png" style="position: absolute; width: 10%; left: 42%; top: 0%; opacity: 0">
+      <img id="pk22" src="img/taartje.png" style="position: absolute; width: 11%; left: 42%; top: 6%; opacity: 0">
+      <img id="pk23" src="img/vijftigprocent.png" style="position: absolute; width: 16%; left: 39.5%; top: 8%; opacity: 0">
+
+      <img id="pk31" src="img/cirkel.png" style="position: absolute; width: 13%; left: 71%; top: 16%; opacity: 0">
+      <img id="pk32" src="img/breuk.png" style="position: absolute; width: 5.5%; left: 75%; top: 15%; opacity: 0">
+      <img id="pk33" src="img/nulkommavijf.png" style="position: absolute; width: 13%; left: 72%; top: 19%; opacity: 0">
+    </div>
   </div>
  </div>
 </div>
@@ -1240,6 +1255,7 @@ var sherpaimg     = document.getElementById("sherpaimg");
 var groei         = document.getElementById("groei");
 var poemeltje     = document.getElementById("poemeltje");
 var station       = document.getElementById("station");
+var peinzende     = document.getElementById("peinzende-kinderen");
 
 function zetOpNul(elem) {
   if (null !== elem && elem.style.marginTop != "0px")
@@ -1255,6 +1271,7 @@ function rellaxAll() {
     zetOpNul(ezelsbrug);
     zetOpNul(sherpa);
     zetOpNul(station);
+    zetOpNul(peinzende);
   } else {
     if (null !== taal_en_beeld) rellax(taal_en_beeld);
     if (null !== gereedschap) {
@@ -1267,6 +1284,7 @@ function rellaxAll() {
     if (null !== sherpa)        rellax(sherpa);
     if (null !== groei)         rellax(groei);
     if (null !== station)       rellax(station);
+    if (null !== peinzende)     rellax(peinzende);
   }
   if (null !== jongetje  && null !== taal_beeld) relScroll(jongetje, taal_beeld);
   if (null !== sherpaimg && null !== kind)       relScroll(sherpaimg, kind);

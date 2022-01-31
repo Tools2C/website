@@ -10,11 +10,14 @@ ACHTERGRONDEN = bg/handen.jpg bg/astrid-hek.jpg bg/boog.jpg bg/op-bankje.jpg \
 FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
 TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
 		img/perron.png img/jongen-in-trein.png img/ron-davis.png \
-		img/out-of-the-box.png
+		img/out-of-the-box.png img/peinzende-kinderen.png
+ZELFDE_GROOTTE = img/rietje.png img/rechthoek.png img/cirkel.png img/half.png \
+		img/breuk.png img/eentweede.png img/nulkommavijf.png \
+		img/vijftigprocent.png img/taartje.png
 TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
 		img/in-de-verte.png \
-		$(TEKENINGEN_BREED)
+		$(ZELFDE_GROOTTE) $(TEKENINGEN_BREED)
 
 all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
 
@@ -75,8 +78,12 @@ img/perron.png: originelen/perron\ 2.png
 img/jongen-in-trein.png: originelen/trein\ jongen.png
 img/ron-davis.png: originelen/ron\ davis.jpg
 img/out-of-the-box.png: originelen/out\ of\ the\ box.png
+img/peinzende-kinderen.png: originelen/peinzende\ kinderen.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
+
+$(ZELFDE_GROOTTE):
+	convert "$(subst img/,originelen/,$@)" -quality 91 -depth 4 -colorspace gray "$@"
 
 tidy: tidy.html
 tidy.html: index.html

@@ -404,3 +404,32 @@ img#trein {
   background-size: contain;
   z-index: -2;
 }
+
+#peinzende-kinderen {
+  position: relative;
+}
+
+@keyframes peinzen {
+   0%       { opacity: 0; }
+   5%       { opacity: 1; }
+  28.33333% { opacity: 1; }
+  33.33333% { opacity: 0; }
+ 100%       { opacity: 0; }
+}
+
+#pk11, #pk12, #pk13, #pk21, #pk22, #pk23, #pk31, #pk32, #pk33 {
+	animation-name: peinzen;
+	animation-iteration-count: infinite;
+}
+#pk11, #pk12, #pk13 { animation-duration: 15s; }
+#pk11               { animation-delay:     0s; }
+#pk12               { animation-delay:     5s; }
+#pk13               { animation-delay:    10s; }
+#pk21, #pk22, #pk23 { animation-duration: 12s; }
+#pk21               { animation-delay:     1s; }
+#pk22               { animation-delay:     5s; }
+#pk23               { animation-delay:     9s; }
+#pk31, #pk32, #pk33 { animation-duration: 18s; }
+#pk31               { animation-delay:     2s; }
+#pk32               { animation-delay:     8s; }
+#pk33               { animation-delay:    14s; }
