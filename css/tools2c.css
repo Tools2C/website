@@ -141,10 +141,21 @@ h1::after, h2::after {
   padding-bottom: 0px;
 }
 .accordion::before {
-  content: "↓ "
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f107";
+  font-size: medium;
+/*
+  content: "\2193 ";
+*/
 }
 .accordion.open::before {
-  content: "↑ "
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f106"; 
+/*
+  content: "\2191 ";
+*/
 }
 
 div#navbarcont a.open i.fa-angle-down:before { content: "\f106"; }
@@ -410,27 +421,53 @@ img#trein {
   position: relative;
 }
 
-@keyframes peinzen {
-   0%       { opacity: 0; }
-   5%       { opacity: 1; }
-  28.33333% { opacity: 1; }
-  33.33333% { opacity: 0; }
- 100%       { opacity: 0; }
+@keyframes peinzen1 {
+   0% { opacity: 0; }
+  10% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 0; }
+ 100% { opacity: 0; }
 }
 
-#pk11, #pk12, #pk13, #pk21, #pk22, #pk23, #pk31, #pk32, #pk33 {
-	animation-name: peinzen;
+@keyframes peinzen2 {
+   0% { opacity: 0; }
+  10% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+ 100% { opacity: 0; }
+}
+
+@keyframes peinzen3 {
+   0% { opacity: 0; }
+   3% { opacity: 1; }
+  13.66666% { opacity: 1; }
+  16.66666% { opacity: 0; }
+ 100% { opacity: 0; }
+}
+
+
+
+#pk11, #pk21, #pk22, #pk23, #pk31, #pk32, #pk33, #pk34, #pk35, #pk36 {
 	animation-iteration-count: infinite;
 }
-#pk11, #pk12, #pk13 { animation-duration: 15s; }
-#pk11               { animation-delay:     0s; }
-#pk12               { animation-delay:     5s; }
-#pk13               { animation-delay:    10s; }
-#pk21, #pk22, #pk23 { animation-duration: 12s; }
-#pk21               { animation-delay:     1s; }
-#pk22               { animation-delay:     5s; }
-#pk23               { animation-delay:     9s; }
-#pk31, #pk32, #pk33 { animation-duration: 18s; }
-#pk31               { animation-delay:     2s; }
-#pk32               { animation-delay:     8s; }
-#pk33               { animation-delay:    14s; }
+#pk11 {
+	  animation-name: peinzen1;
+	  animation-duration:  7s;
+}
+#pk21, #pk22 {
+	  animation-name: peinzen2;
+	  animation-duration: 11s;
+}
+#pk21	{ animation-delay:     1s; }
+#pk22	{ animation-delay:     6.5s; }
+#pk31, #pk32, #pk33, #pk34, #pk35, #pk36 {
+	  animation-name: peinzen3;
+	  animation-duration: 29s;
+}
+#pk31	{ animation-delay:     0s; }
+#pk32	{ animation-delay:     4.83333s; }
+#pk33	{ animation-delay:     9.66666s; }
+#pk34	{ animation-delay:    14.5s; }
+#pk35	{ animation-delay:    19.33333s; }
+#pk36	{ animation-delay:    24.16666s; }
+
