@@ -471,3 +471,13 @@ img#trein {
 #pk35	{ animation-delay:    19.33333s; }
 #pk36	{ animation-delay:    24.16666s; }
 
+h4 {
+	font-variant: small-caps; 
+	font-weight: 600;
+/*
+	text-transform: uppercase;
+	font-size: 15px;
+	font-feature-settings: "smcp"; 
+*/
+	margin-bottom: 0;
+}
