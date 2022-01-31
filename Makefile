@@ -17,6 +17,7 @@ TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		$(TEKENINGEN_BREED)
 
 all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
+	@chown -R nobody .
 
 tidy: tidy.html
 tidy.html: index.html
