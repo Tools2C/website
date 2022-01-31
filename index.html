@@ -596,7 +596,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     <div class="w3-half">
       <div id="gids">
         <img src="img/gids.png" style="width: 100%">
-        <span class="quote" id="fader">
+        <span class="quote">
           Dyslexie is geen stoornis die je hebt of die je bent,
           het is een manier van leven en leren
         </span>
@@ -984,7 +984,6 @@ var contactKnop2 = document.getElementById("contactKnop2");
 
 var pagetwo = document.getElementById("paginatwee");
 var stoornis = document.getElementById("stoornis");
-var fader    = document.getElementById("fader");
 
 var modal = document.getElementById('concepten');
 
@@ -1081,13 +1080,6 @@ function scrollFunction() {
     navbar.style.marginTop = "0px";
     knoppen.style.marginLeft = "90px";
     const bottom = stoornis.getBoundingClientRect().bottom;
-    if (bottom > 150) {
-    	fader.style.opacity = 0;
-    } else if (bottom < -100) {
-    	fader.style.opacity = 1;
-    } else {
-        fader.style.opacity = (0 - (bottom - 150)) / 250;
-    }
     const bottom2 = pagetwo.getBoundingClientRect().bottom;
     if (bottom2 < 150) {
         w3show(contactKnop)

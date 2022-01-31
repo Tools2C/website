@@ -105,6 +105,9 @@ video#poemeltje {
   background-color: #bdcbc4;
 }
 
+.quote {
+	color: #666;
+}
 .quote b {
   font-family: sans-serif;
 }
