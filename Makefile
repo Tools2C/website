@@ -20,7 +20,7 @@ TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/in-de-verte.png \
 		$(ZELFDE_GROOTTE) $(TEKENINGEN_BREED)
 
-all: $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) tidy.html
+all: tidy.html $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN)
 	@chown -R nobody .
 
 tidy: tidy.html
