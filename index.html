@@ -325,18 +325,18 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
       </div>
       -->
        <div class="w3-row" onclick="document.getElementById('gereedschappen').style.display='block'" id="gereedschap">
-        <div style="border-bottom: 2px solid black; padding-bottom: 2px; margin-bottom: 0.5em">Davis-gereedschappen:</div>
+        <div class="titlijn" style="border-bottom: 2px solid black; padding-bottom: 2px; margin-bottom: 6px"><b class="tabtit">Davis-gereedschappen</b></div>
         <div style="float: left; width: 33.33333%" id="orienteren">
           <img src="svg/orienteren.svg" style="width: 95%">
-          <p style="text-align: center">Oriënteren</p>
+          <p class="quote" style="text-align: center">Oriënteren</p>
         </div>
         <div style="width: 33.33333%; float: left; margin-top: 180px" id="loslaten">
           <img src="svg/ontspannen.svg" style="width: 95%">
-          <p style="text-align: center">Loslaten</p>
+          <p  class="quote" style="text-align: center">Loslaten</p>
         </div>
         <div style="width: 33.33333%; float: left; margin-top: 360px" id="doseren">
           <img src="svg/energie.svg" style="width: 95%">
-          <p style="text-align: center">Energie<br>doseren</p>
+          <p  class="quote" style="text-align: center">Energie<br>doseren</p>
         </div>
       </div>
 
@@ -1230,7 +1230,7 @@ function parallax(elem) {
     return 1;
   else if (box.top > window.innerHeight)
     return 0;
-  elem.style.objectPosition = "0 " + (0 - box.top) + "px";
+  elem.style.objectPosition = "center " + (0 - box.top) + "px";
 }
 
 var taal_en_beeld = document.getElementById("taal-en-beeld");
