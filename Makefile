@@ -3,7 +3,7 @@ BG_HEIGHT  = 1080
 BG_QUALITY = 85
 COL_WIDTH  = 600
 
-VIDEOS = video/poemeltje.jpg video/poemeltje.mp4
+VIDEOS = video/poemeltje.jpg video/poemeltje.mp4 video/poemeltje.webm
 LOGOS = img/logo.png img/logo.ico
 ACHTERGRONDEN = bg/handen.jpg bg/astrid-hek.jpg bg/boog.jpg bg/op-bankje.jpg \
 		bg/in-gras.jpg bg/radslag.jpg
@@ -28,6 +28,9 @@ tidy.html: index.html
 
 video/poemeltje.jpg: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -vframes 1 -vf scale=$(VIDEOWIDTH):-2 -q:v 1 "$@"
+
+video/poemeltje.webm: originelen/poemeltje.mp4
+	ffmpeg -i "$<" -c:v libvpx -qmin 0 -qmax 25 -crf 4 -b:v 1M -vf scale=$(VIDEOWIDTH):-2 -an -threads 0 "$@"
 
 video/poemeltje.mp4: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -c:v libx264 -pix_fmt yuv420p -profile:v baseline -level 3.0 -crf 22 -preset veryslow -vf scale=$(VIDEOWIDTH):-2 -an -movflags +faststart "$@"
