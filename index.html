@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/mvboli.css">
-<link rel="stylesheet" href="css/all.css"> <!-- font awesome -->
+<link rel="stylesheet" href="css/w3pro.css">
 <link rel="stylesheet" href="css/tools2c.css">
+<link rel="stylesheet" href="css/bgimgs.css">
+<link rel="stylesheet" href="css/mvboli.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <!-- <script src="https://kit.fontawesome.com/b92078da0c.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/3a8609ddd4.js" crossorigin="anonymous"></script>
 <!-- <script src="b92078da0c.js" crossorigin="anonymous"></script> -->
 <body>
 
@@ -58,9 +59,9 @@
 </div>
 
 
-<!-- Zand -->
-<div class="bgimg stilbeeld w3-display-container" id="top"
-     style="background-image: url('bg/handen.jpg'); height: 100%; min-height: 740px!important">
+<!-- Handen -->
+<div class="bgimg stilbeeld bg-handen w3-display-container" id="top"
+     style="height: 100%; min-height: 740px!important">
 
   <div class="w3-display-bottommiddle w3-black w3-padding w3-round-xxlarge w3-card topform" style="margin-bottom: 2vh">
     <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
@@ -84,7 +85,7 @@
         </div>
       </div>
       <input class="w3-input w3-border" type="text" placeholder="Berichtje" required name="Berichtje">
-      <button id="contactSubmit" class="w3-button w3-black w3-right w3-section w3-round-large" type="submit">
+      <button id="contactSubmit" class="w3-button w3-green w3-right w3-section w3-round-large" type="submit">
         <i class="fa fa-paper-plane"></i> VERSTUUR BERICHT
       </button>
     </form>
@@ -119,7 +120,7 @@
 		  <p>Met de Davis-methode leer je om de voordelen, <b>de talenten</b> die in jouw manier van denken verscholen liggen <b>tot bloei</b> te laten komen. Je krijgt <b>controle</b> over jouw manier van denken en daardoor <b>verdwijnen</b> dyslectische symptomen.</p>
 	  <p>
     <div id="astrid" style="position: relative; margin-top: -110px; margin-bottom: 130px;"></div>
-  	<div style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%; background-image: url('bg/astrid-hek.jpg')">&nbsp;</div>
+  	<div class="bg-astrid-hek" style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%;">&nbsp;</div>
 	  <div id="overmij" class="accordion" onclick="accordion(this)">
       Over mij
     </div>
@@ -172,8 +173,7 @@
 </div>
 
 <!-- boog -->
-<div class="bgimg w3-display-container stilbeeld centerContainer"
-     style="background-image: url('bg/boog.jpg')">
+<div class="w3-display-container stilbeeld centerContainer bgimg bg-boog lazybg">
 
   <div class="w3-content w3-black w3-round-xxlarge w3-container w3-padding-24 centerChild topform fifty">
 
@@ -250,7 +250,7 @@
 	<div class="w3-hide">
     <p><b>Wie beter dan een lotgenoot kan andere dyslectici helpen hun problemen met lezen en schrijven op te lossen?</b></p>
     <p>Ron Davis is de grondlegger van de Davis-methode. Hij werd in zijn jeugd dom, achterlijk en lastig gevonden. Hij leerde pas spreken op zijn 17e en tot zijn 38e kon hij nauwelijks lezen of schrijven.</p>
-	<div class="centerContainer"><img src="img/ron-davis.png" class="centerChild" style="width: 30%" alt="Ron Davis"> </div>
+	<div class="centerContainer"><img src="img/ron-davis.png" class="centerChild" style="width: 30%" alt="Ron Davis" loading="lazy"></div>
 	 <p> Hoewel hij als als verstandelijk gehandicapt werd beschouwd, bleek hij op zijn 17e tot ieders verbazing een IQ van 139 te hebben.
 	 Opeens gingen mensen hem met andere ogen bekijken. Hij kreeg spraaktherapie en schopte het zonder formeel onderwijs tot ingenieur. Op zijn 27e was zijn IQ zelfs gestegen tot 169 punten.</p>
 	 <p>Toen hij dreigde gepromoveerd te worden naar een administratieve functie gooide hij het roer om, uit angst om... ontmaskerd te worden als analfabeet.</p>
@@ -268,11 +268,11 @@
 	  <b> Je kunt dan het gevoel krijgen dat jouw trein beweegt.</b> Je hersens zien beweging en <b>vertalen dit als een bewegende sensatie</b> ook al staat jouw trein nog stil op het perron.</p>
 
       <div class="w3-display-container">
-        <div id="perron" class="w3-display-topleft" style="background-image: url('img/perron.png')"></div>
+        <div id="perron" class="w3-display-topleft bg-perron lazybg"></div>
         <div id="trein-container" class="w3-display-topleft">
-          <img id="trein" src="img/trein.png" alt="trein">
+          <img id="trein" src="img/trein.png" alt="trein" loading="lazy">
         </div>
-        <img id="jongen-in-trein" src="img/jongen-in-trein.png" alt="passagier">
+        <img id="jongen-in-trein" src="img/jongen-in-trein.png" alt="passagier" loading="lazy">
       </div>
 
      <p>Hij ontwikkelde voor zichzelf een techniek om die <b>desoriëntatie</b> tijdelijk <b>uit te schakelen</b> en merkte meteen een enorm verschil. Letters bewogen niet meer, hij zag voor het eerst spaties tussen de woorden.</p>
@@ -326,7 +326,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     <div class="w3-half">
       <!--
       <div id="ezelsbrug">
-       <img src="img/ezelsbrug.png" style="width: 100%">
+       <img src="img/ezelsbrug.png" style="width: 100%" alt="ezelsbrug" loading="lazy">
        <span style="font-family: MV Boli; font-size: large">
          De korte route naar het antwoord, brengt je niet naar begrip<b>.</b>
        </span>
@@ -335,15 +335,15 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
        <div class="w3-row" onclick="document.getElementById('gereedschappen').style.display='block'" id="gereedschap">
         <div class="titlijn" style="border-bottom: 2px solid black; padding-bottom: 2px; margin-bottom: 6px"><b class="tabtit">Davis-gereedschappen</b></div>
         <div style="float: left; width: 33.33333%" id="orienteren">
-          <img src="svg/orienteren.svg" style="width: 95%" alt="oriënteren">
+          <img src="svg/orienteren.svg" style="width: 95%" alt="oriënteren" loading="lazy">
           <p class="quote" style="text-align: center">Oriënteren</p>
         </div>
         <div style="width: 33.33333%; float: left; margin-top: 180px" id="loslaten">
-          <img src="svg/ontspannen.svg" style="width: 95%" alt="loslaten">
+          <img src="svg/ontspannen.svg" style="width: 95%" alt="loslaten" loading="lazy">
           <p  class="quote" style="text-align: center">Loslaten</p>
         </div>
         <div style="width: 33.33333%; float: left; margin-top: 360px" id="doseren">
-          <img src="svg/energie.svg" style="width: 95%" alt="energie doseren">
+          <img src="svg/energie.svg" style="width: 95%" alt="energie doseren" loading="lazy">
           <p  class="quote" style="text-align: center">Energie<br>doseren</p>
         </div>
       </div>
@@ -399,13 +399,13 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
        Dat zijn onder andere woorden als <b>de, het, een, of</b>. Woorden waar je niet automatisch een beeld bij hebt.</p>
 	   <p><b>Ook bij het rekenen heb je met taal te maken</b>. Niet alleen bij verhaalsommen, maar ook bij rekenbegrippen als <b>keer (of maal), delen, breuken, cijfers achter de komma en symbolen als x : / en %.</b></p>
       <p>Samen met de counselor en met behulp van een woordenboek bespreek je de betekenis. Je maakt er een zin bij en kleit een beeld dat er voor jou bij past.</p>
-      <p><img src="img/sm-de.jpg" style="width: 100%" alt='"de" in klei'></p>
+      <p><img src="img/sm-de.jpg" style="width: 100%" alt='"de" in klei' loading="lazy"></p>
     </div>
     <div class="accordion" onclick="accordion(this)">
       Beeld en begrip
       </div>
 	  <div class="w3-hide"> <p>Als je problemen hebt met <b>rekenen</b> en/of met <b>sociale situaties</b> dan heb je waarschijnlijk geen of een vervormd beeld bij een aantal belangrijke levensbegrippen, zoals <b>verandering</b> en <b>oorzaak/gevolg</b>. Als deze begrippen niet helemaal duidelijk voor je zijn, is het heel lastig om te leren rekenen of om te begrijpen wat er van je wordt verwacht: thuis, op school of met vrienden. Er kunnen dan gemakkelijk misverstanden ontstaan, waardoor ook jij je niet begrepen voelt.</p>
- <p><img src="img/concept-mastery-verandering.jpg" style="width: 100%" alt='"verandering" in klei'> </p>
+ <p><img src="img/concept-mastery-verandering.jpg" style="width: 100%" alt='"verandering" in klei' loading="lazy"> </p>
 
 
 
@@ -415,7 +415,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     </div>
 	<div class="w3-half">
     <div id="taal-en-beeld">
-	  <img src="img/out-of-the-box.png" style="width:90%; margin-left:10%" id="taal-beeld" alt="Out of the Box">
+	  <img src="img/out-of-the-box.png" style="width:90%; margin-left:10%" id="taal-beeld" alt="Out of the Box" loading="lazy">
      <p class="quote">De vraag is niet waar je naar kijkt, maar hoe jij het ziet</p>
     </div>
 	  </div>
@@ -423,7 +423,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 
-<div class="w3-display-container stilbeeld" style="background-image: url('bg/op-bankje.jpg'); min-height: 80%;">
+<div class="w3-display-container stilbeeld bgimg bg-bankje lazybg">
 </div>
 
 <!-- orienteren - ontspannen - energie doseren -->
@@ -485,9 +485,9 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
           <div id="nogniet" class="quote zover">Nog niet zo ver</div>
         </div>
         <div>
-          <div id="lrhuizen"  class="leesrijpimg"><img src="static/leesrijp-huizen.png" alt="twee getekende huizen, één leesrijp en één nog niet zo ver"></div>
-          <div id="lrflessen" class="leesrijpimg"><img src="static/leesrijp-flessen.png" alt="twee getekende flessen, één leesrijp en één nog niet zo ver"></div>
-          <div id="lrbomen"   class="leesrijpimg"><img src="static/leesrijp-bomen.png" alt="twee getekende bomen, één leesrijp en één nog niet zo ver"></div>
+          <div id="lrhuizen"  class="leesrijpimg"><img src="static/leesrijp-huizen.png" alt="twee getekende huizen, één leesrijp en één nog niet zo ver" loading="lazy"></div>
+          <div id="lrflessen" class="leesrijpimg"><img src="static/leesrijp-flessen.png" alt="twee getekende flessen, één leesrijp en één nog niet zo ver" loading="lazy"></div>
+          <div id="lrbomen"   class="leesrijpimg"><img src="static/leesrijp-bomen.png" alt="twee getekende bomen, één leesrijp en één nog niet zo ver" loading="lazy"></div>
         </div>
       </div>
     <h4>Vaker testen</h4>
@@ -504,14 +504,14 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     </div>
     <div class="w3-hide">
 	  <p><b>Als je iets niet begrijpt, krijg je vaak ezelsbruggetjes aangereikt.</b> Goed bedoeld, maar helaas helpen die trucjes je vaak <i>van de regen in de drup</i>.</p>
- <div class="centerContainer"><img src="img/ezelsbrug.png" class="centerChild" style="width: 100%" alt="ezelsbrug"></div>
+ <div class="centerContainer"><img src="img/ezelsbrug.png" class="centerChild" style="width: 100%" alt="ezelsbrug" loading="lazy"></div>
  <span class="quote">De korte route naar het antwoord, brengt je niet naar begrip</span>
 	  <p>Een paar voorbeelden:</p>
 	  <h4>Verleng het woord</h4>
 	  <p><b>Je hoort aan de klank van een woord vaak niet of het eindigt op een d of een t.</b> Om je te helpen krijg je als <b>ezelsbruggetje</b> dat je een woord moet <b>verlengen</b>. Daarmee wordt bedoeld dat je er meervoud van moet maken. Boot wordt boten en bord worden borden.
 	  <br>Een typische dysleticus zal als er wordt gezegd <b>'verleng boot'</b>, <b><u>niet</u></b> aan <b>meervoud</b> denken. Zij zien eerder het volgende voor zich:</p>
-    <img src="img/boot.png" style="width: 45%; float: left;" alt="een boot">
-    <img src="img/boot-lang.png" style="width: 55%; float: left;" alt="een verlengde boot">
+    <img src="img/boot.png" style="width: 45%; float: left;" alt="een boot" loading="lazy">
+    <img src="img/boot-lang.png" style="width: 55%; float: left;" alt="een verlengde boot" loading="lazy">
 	  <h4>'t exfokschaap</h4>
 	  <p>Bij iedereen gaat er wel een belletje klinken bij het ezelsbruggetje <b>'t kofschip</b> of <b>'t exfokschaap</b>. De meeste mensen hebben echter geen idee wanneer ze het toe moeten passen.</p>
 	<h4>Onberijpelijke spreuken</h4>
@@ -519,13 +519,13 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     </div>
     </div>
     <div class="w3-half">
-      <div id="station" class="centerContainer"><img src="img/in-de-verte.png" class="centerChild" style="width: 50%" alt="A. en A. lopend in de verte"></div>
+      <div id="station" class="centerContainer"><img src="img/in-de-verte.png" class="centerChild" style="width: 50%" alt="A. en A. lopend in de verte" loading="lazy"></div>
     </div>
   </div>
 </div>
 
 <!-- brug -->
-<div class="w3-display-container stilbeeld" style="background-image: url('bg/handen.jpg'); min-height: 80%;">
+<div class="w3-display-container stilbeeld bgimg bg-handen">
 </div>
 <!-- Dyslexie -->
 <div class="w3-display-container w3-card-4 quoteblok" id="stoornis">
@@ -589,7 +589,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 	</div>
     <div class="w3-half">
       <div id="gids">
-        <img src="img/gids.png" style="width: 100%" alt="gids">
+        <img src="img/gids.png" style="width: 100%" alt="gids" loading="lazy">
         <span class="quote">
           Dyslexie is geen stoornis die je hebt of die je bent,
           het is een manier van leven en leren
@@ -600,8 +600,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 <!-- Klok -->
-<div class="w3-display-container stilbeeld centerContainer bgimg"
-     style="background-image: url('bg/in-gras.jpg')">
+<div class="w3-display-container stilbeeld centerContainer bgimg bg-gras lazybg">
 </div>
 
 <!-- Dyscalculie -->
@@ -669,26 +668,25 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
   </div>
   <div class="w3-half">
     <div id="peinzende-kinderen">
-      <img src="img/peinzende-kinderen.png" style="width: 100%; margin-top: 10px" alt="Peinzende kinderen">
+      <img src="img/peinzende-kinderen.png" style="width: 100%; margin-top: 10px" alt="Peinzende kinderen" loading="lazy">
 
-      <img id="pk11" src="img/half.png" style="position: absolute; width: 12%; left: 5%; top: 9.5%; opacity: 0" alt="half geschreven">
+      <img id="pk11" src="img/half.png" style="position: absolute; width: 12%; left: 5%; top: 9.5%; opacity: 0" alt="half geschreven" loading="lazy">
 
-      <img id="pk21" src="img/rietje.png" style="position: absolute; width: 10%; left: 42%; top: 0%; opacity: 0" alt="een glas half vol">
-      <img id="pk22" src="img/taartje.png" style="position: absolute; width: 11%; left: 42%; top: 6%; opacity: 0" alt="een half puntje taart">
+      <img id="pk21" src="img/rietje.png" style="position: absolute; width: 10%; left: 42%; top: 0%; opacity: 0" alt="een glas half vol" loading="lazy">
+      <img id="pk22" src="img/taartje.png" style="position: absolute; width: 11%; left: 42%; top: 6%; opacity: 0" alt="een half puntje taart" loading="lazy">
 
-      <img id="pk31" src="img/cirkel.png" style="position: absolute; width: 13%; left: 71%; top: 16%; opacity: 0" alt="een halve cirkel">
-      <img id="pk32" src="img/breuk.png" style="position: absolute; width: 5.5%; left: 75%; top: 15%; opacity: 0" alt="½">
-      <img id="pk33" src="img/nulkommavijf.png" style="position: absolute; width: 13%; left: 72%; top: 19%; opacity: 0" alt="0,5">
-      <img id="pk34" src="img/rechthoek.png" style="position: absolute; width: 14%; left: 70%; top: 16%; opacity: 0" alt="half gevulde rechthoek">
-      <img id="pk35" src="img/eentweede.png" style="position: absolute; width: 14%; left: 71%; top: 14%; opacity: 0" alt="1/2">
-      <img id="pk36" src="img/vijftigprocent.png" style="position: absolute; width: 15%; left: 70%; top: 15%; opacity: 0" alt="50%">
+      <img id="pk31" src="img/cirkel.png" style="position: absolute; width: 13%; left: 71%; top: 16%; opacity: 0" alt="een halve cirkel" loading="lazy">
+      <img id="pk32" src="img/breuk.png" style="position: absolute; width: 5.5%; left: 75%; top: 15%; opacity: 0" alt="½" loading="lazy">
+      <img id="pk33" src="img/nulkommavijf.png" style="position: absolute; width: 13%; left: 72%; top: 19%; opacity: 0" alt="0,5" loading="lazy">
+      <img id="pk34" src="img/rechthoek.png" style="position: absolute; width: 14%; left: 70%; top: 16%; opacity: 0" alt="half gevulde rechthoek" loading="lazy">
+      <img id="pk35" src="img/eentweede.png" style="position: absolute; width: 14%; left: 71%; top: 14%; opacity: 0" alt="1/2" loading="lazy">
+      <img id="pk36" src="img/vijftigprocent.png" style="position: absolute; width: 15%; left: 70%; top: 15%; opacity: 0" alt="50%" loading="lazy">
     </div>
   </div>
  </div>
 </div>
 
-<div class="w3-display-container stilbeeld bgimg"
-     style="background-image: url('bg/radslag.jpg')">
+<div class="w3-display-container stilbeeld bgimg bg-radslag lazybg">
 </div>
 <!--
 <div class="w3-display-container w3-card-4 quoteblok">
@@ -766,7 +764,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 
 <div class="w3-half">
       <div id="schaduw">
-        <img src="img/schaduw.png" style="width: 60%; margin-left: 20%; margin-right: 20%" alt="een kind dat naar eigen de schaduw kijkt">
+        <img src="img/schaduw.png" style="width: 60%; margin-left: 20%; margin-right: 20%" alt="een kind dat naar eigen de schaduw kijkt" loading="lazy">
         <span class="quote">
           De wereld verandert omdat ik besta.
         </span>
@@ -912,15 +910,15 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
         <tr>
           <th style="width: 33.33333%; text-align: center">
             Oriënteren<br />
-            <img src="svg/orienteren.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="oriënteren">
+            <img src="svg/orienteren.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="oriënteren" loading="lazy">
           </th>
           <th style="width: 33.33333%; text-align: center">
             Loslaten<br />
-            <img src="svg/ontspannen.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="loslaten">
+            <img src="svg/ontspannen.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="loslaten" loading="lazy">
           </th>
           <th style="width: 33.33333%; text-align: center">
             Energie doseren<br />
-            <img src="svg/energie.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="energie doseren">
+            <img src="svg/energie.svg" style="width: 95%; max-width: 150px; padding: 4px 0" alt="energie doseren" loading="lazy">
           </th>
         </tr><tr>
           <td>
@@ -940,8 +938,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 <!-- ****************** einde modals ******************* -->
 
 <!-- Astrid bij het hek -->
-<div class="w3-display-container stilbeeld bgimg"
-     style="background-image: url('bg/astrid-hek.jpg')">
+<div class="w3-display-container stilbeeld bgimg bg-astrid-hek">
   <div style="position: absolute; bottom: 50px" id="boom">&nbsp;</div>
 </div>
 <!--
@@ -969,7 +966,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
     <div class="w3-half">
       <table>
         <tr>
-          <td style="vertical-align: top; font-size: 9px; text-align: center"><a href="http://www.dyslexia.com/ddai.htm"><img src="static/dda-wit.png" style="width: 120px" alt="Logo van de Davis Dyslexia Association"></a><br />Licensed&nbsp;and&nbsp;certified<br />by&nbsp;Davis&nbsp;Dyslexia<br />Association&nbsp;International</td>
+          <td style="vertical-align: top; font-size: 9px; text-align: center"><a href="http://www.dyslexia.com/ddai.htm"><img src="static/dda-wit.png" style="width: 120px" alt="Logo van de Davis Dyslexia Association" loading="lazy"></a><br />Licensed&nbsp;and&nbsp;certified<br />by&nbsp;Davis&nbsp;Dyslexia<br />Association&nbsp;International</td>
           <td style="font-size: 11px;">Professionele diensten omschreven als Davis&reg;, inclusief Davis&reg; Dyslexie Counseling, Davis&reg; Symbol Mastery, Davis&reg; Ori&euml;ntatie Counseling, Davis&reg; Aandachtscounseling, Davis&reg; Dyscalculie&nbsp;Counseling en Davis&reg; programma voor het jonge kind, mogen alleen aangeboden worden door mensen die opgeleid en gecertificeerd zijn als Davis Counselors of Specialisten door&nbsp;<a href="http://www.dyslexia.com/ddai.htm" target="_blank">Davis&reg; Dyslexia Association International</a>.</td>
         </tr>
       </table>
@@ -977,8 +974,26 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
   </div>
 </footer>
 <script>
-window.onscroll = function() {scrollFunction()};
+document.addEventListener("DOMContentLoaded", function() {
+  var lazybgs = [].slice.call(document.querySelectorAll(".lazybg"));
 
+  if ("IntersectionObserver" in window) {
+    let lazybgObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("zien");
+          lazybgObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazybgs.forEach(function(lazybg) {
+      lazybgObserver.observe(lazybg);
+    });
+  }
+});
+
+window.onscroll = function() {scrollFunction()};
 
 var logo     = document.getElementById("logo");
 var navbar   = document.getElementById("navbar");

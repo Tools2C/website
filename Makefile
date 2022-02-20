@@ -1,6 +1,6 @@
 VIDEOWIDTH = 720
-BG_HEIGHT  = 1080
-BG_QUALITY = 85
+BG_HEIGHT  = 768
+BG_QUALITY = 70
 COL_WIDTH  = 600
 
 VIDEOS = video/poemeltje.jpg video/poemeltje.mp4 video/poemeltje.webm
@@ -26,8 +26,11 @@ tidy: tidy.html
 tidy.html: index.html
 	tidy --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
 
-video/poemeltje.jpg: originelen/poemeltje.mp4
+video/poemeltje-stil.jpg: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -vframes 1 -vf scale=$(VIDEOWIDTH):-2 -q:v 1 "$@"
+
+video/poemeltje.jpg: video/poemeltje-stil.jpg
+	convert "$<" -quality 50 "$@"
 
 video/poemeltje.webm: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -c:v libvpx -qmin 0 -qmax 25 -crf 4 -b:v 1M -vf scale=$(VIDEOWIDTH):-2 -an -threads 0 "$@"
@@ -42,13 +45,15 @@ img/logo.ico: img/logo.png
 	convert "$<" -resize x64 -flatten -colors 256 -background transparent "$@"
 
 bg/handen.jpg: originelen/Aerin-handen.jpg
-bg/astrid-hek.jpg: originelen/IMG_20200508_174605.jpg
 bg/boog.jpg: originelen/IMG_20200508_171320.jpg
 bg/op-bankje.jpg: originelen/Aerin-op-bankje.jpg
 bg/in-gras.jpg: originelen/Aerin-in-gras.jpg
 bg/radslag.jpg: originelen/radslag.jpg
 $(ACHTERGRONDEN):
 	convert "$<" -resize x$(BG_HEIGHT) -quality $(BG_QUALITY) "$@"
+
+bg/astrid-hek.jpg: originelen/IMG_20200508_174605.jpg
+	convert "$<" -resize 768x -quality 90 "$@"
 
 img/concept-mastery-verandering.jpg: originelen/Concept\ Mastery\ Verandering.jpg
 img/sm-de.jpg: originelen/Astrid\ Toorop\ SM\ de.jpg

@@ -30,6 +30,11 @@ table { border-spacing: 0; }
   transition: 0.2s;
 }
 
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;}
+.w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+
 .bg-donkergroen,.bg-donkergroen:hover{color:#fff!important;background-color:#030!important}
 #navbar {
   /* background-image: url('balk-groen.png'); */
@@ -483,3 +488,5 @@ h4 {
 */
 	margin-bottom: 0;
 }
+
+
