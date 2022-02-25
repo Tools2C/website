@@ -5,7 +5,7 @@ COL_WIDTH  = 600
 
 VIDEOS = video/poemeltje.jpg video/poemeltje.mp4 video/poemeltje.webm
 LOGOS = img/logo.png img/logo.ico
-ACHTERGRONDEN = bg/handen.jpg bg/astrid-hek.jpg bg/boog.jpg bg/op-bankje.jpg \
+ACHTERGRONDEN = bg/handen.jpg bg/boog.jpg bg/op-bankje.jpg \
 		bg/in-gras.jpg bg/radslag.jpg
 FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
 TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
@@ -19,12 +19,12 @@ TEKENINGEN = img/kind.png img/sherpa.png img/boot.png img/boot-lang.png \
 		img/taal-en-beeld.png img/jongetje-denken.png img/groei.png \
 		$(ZELFDE_GROOTTE) $(TEKENINGEN_BREED)
 
-all: tidy.html $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN)
+all: tidy.html $(VIDEOS) $(LOGOS) $(ACHTERGRONDEN) $(FOTOS) $(TEKENINGEN) bg/astrid-hek.jpg
 	@chown -R nobody .
 
 tidy: tidy.html
 tidy.html: index.html
-	tidy --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
+	tidy --warn-proprietary-attributes no --drop-proprietary-attributes no --drop-empty-elements no $< > $@ || true
 
 video/poemeltje-stil.jpg: originelen/poemeltje.mp4
 	ffmpeg -i "$<" -vframes 1 -vf scale=$(VIDEOWIDTH):-2 -q:v 1 "$@"
