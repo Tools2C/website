@@ -488,4 +488,6 @@ h4 {
 	margin-bottom: 0;
 }
 
-
+#contact2 img {
+	filter: invert(100%);
+}
