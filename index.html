@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-<title>Tools2C - leren door zien</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
-<link rel="stylesheet" href="css/w3pro.css">
-<link rel="stylesheet" href="css/tools2c.css">
-<link rel="stylesheet" href="css/bgimgs.css">
-<link rel="stylesheet" href="css/mvboli.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<!-- <script src="https://kit.fontawesome.com/b92078da0c.js" crossorigin="anonymous"></script> -->
-<script src="https://kit.fontawesome.com/3a8609ddd4.js" crossorigin="anonymous"></script>
-<!-- <script src="b92078da0c.js" crossorigin="anonymous"></script> -->
+<head>
+  <title>Tools2C - leren door zien</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+  <link rel="stylesheet" href="css/w3pro.css">
+  <link rel="stylesheet" href="css/tools2c.css">
+  <link rel="stylesheet" href="css/mvboli.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- <script src="https://kit.fontawesome.com/b92078da0c.js" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/3a8609ddd4.js" crossorigin="anonymous"></script>
+  <!-- <script src="b92078da0c.js" crossorigin="anonymous"></script> -->
+  <style>
+    .bg-handen      { background-color: #7B8D44; background-image: url('/bg/handen.jpg'); }
+    .bg-astrid-hek  { background-color: #707976; background-image: url('/bg/astrid-hek.jpg'); }
+    .bg-boog        { background-color: #7E8976; }
+    .bg-boog.zien   { background-image: url('/bg/boog.jpg'); }
+    .bg-perron.zien { background-image: url('/img/perron.png'); }
+    .bg-bankje      { background-color: #7A8578; }
+    .bg-bankje.zien { background-image: url('/bg/op-bankje.jpg'); }
+    .bg-gras        { background-color: #6A7C59; }
+    .bg-gras.zien   { background-image: url('/bg/in-gras.jpg'); }
+    .bg-radslag     { background-color: #798474; }
+    .bg-radslag.zien{ background-image: url('/bg/radslag.jpg'); }
+    <!--#if expr="$HTTP_USER_AGENT=/iPhone/" -->
+      .stilbeeld{background-attachment: scroll;}
+    <!--#elif expr="$HTTP_USER_AGENT=/iPad/" -->
+      .stilbeeld{background-attachment: scroll;}
+    <!--#else -->
+      .stilbeeld{background-attachment: fixed;}
+    <!--#endif -->
+  </style>
+  <noscript><style>
+    .bg-boog   { background-image: url('/bg/boog.jpg'); }
+    .bg-perron { background-image: url('/img/perron.png'); }
+    .bg-bankje { background-image: url('/bg/op-bankje.jpg'); }
+    .bg-gras   { background-image: url('/bg/in-gras.jpg'); }
+    .bg-radslag{ background-image: url('/bg/radslag.jpg'); }
+  </style></noscript>
+  <!--#include file="ssi/iphone.html" -->
+</head>
 <body>
-
 <!-- Logo & navigatie -->
 <div class="w3-top w3-hide w3-show" style="position: absolute" id="navbarcont">
   <div class="w3-card-4 w3-bar bg-donkergroen" id="navbar" style="margin-top: 100px; height: 100px; padding-top: 20px;">
@@ -66,7 +94,7 @@
   <div class="w3-display-bottommiddle w3-black w3-padding w3-round-xxlarge w3-card topform" style="margin-bottom: 2vh">
     <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
     <p class="w3-hide-large">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
-    <!--# include file="ssi/adres.html" -->
+    <!--#include file="ssi/adres.html" -->
     <p class="w3-hide-large">
       Kom gerust langs voor een kopje <i class="fa fa-coffee"></i><br />
       ... of laat een berichtje achter:
@@ -354,7 +382,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 <!-- Poemeltje -->
-<video id="poemeltje" poster="video/poemeltje.jpg" autoplay muted loop class="w3-display-container">
+<video id="poemeltje" poster="video/poemeltje.jpg" autoplay autoPlay muted loop playsinline playsInline class="w3-display-container">
   <source src="video/poemeltje.mp4" type="video/mp4">
   <source src="video/poemeltje.webm" type="video/webm">
 </video>
@@ -783,7 +811,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
       </header>
       <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
       <p class="w3-hide-large">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
-      <!--# include file="ssi/adres.html" -->
+      <!--#include file="ssi/adres.html" -->
       <p class="w3-hide-large">
         Kom gerust gezellig langsvoor een kopje <i class="fa fa-coffee"></i><br />
         ... of laat een berichtje achter:
@@ -959,7 +987,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
       <table>
         <tr>
           <td style="vertical-align: top"><img src="img/logo.png" style="width: 104px; margin: 0 8px" alt="Tools2C - leren door zien"></td>
-          <td><!--# include file="ssi/adres.html" --></td>
+          <td><!--#include file="ssi/adres.html" --></td>
         </tr>
       </table>
     </div>
@@ -989,6 +1017,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     lazybgs.forEach(function(lazybg) {
       lazybgObserver.observe(lazybg);
+    });
+  } else {
+    lazybgs.forEach(function(bg){
+        bg.classList.add("zien");
     });
   }
 });
@@ -1260,8 +1292,14 @@ var ezelsbrug     = document.getElementById("ezelsbrug");
 var sherpa        = document.getElementById("sherpa");
 var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
-var schaduw         = document.getElementById("schaduw");
-var poemeltje     = document.getElementById("poemeltje");
+var schaduw       = document.getElementById("schaduw");
+<!--#if expr="$HTTP_USER_AGENT=/iPhone/" -->
+  var poemeltje   = null;
+<!--#elif expr="$HTTP_USER_AGENT=/iPad/" -->
+  var poemeltje   = null;
+<!--#else -->
+  var poemeltje   = document.getElementById("poemeltje");
+<!--#endif -->
 var station       = document.getElementById("station");
 var peinzende     = document.getElementById("peinzende-kinderen");
 
