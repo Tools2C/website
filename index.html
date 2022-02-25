@@ -60,8 +60,11 @@
 
 
 <!-- Handen -->
-<div class="bgimg stilbeeld bg-handen w3-display-container" id="top"
+<div class="stilbeeld bg-handen w3-display-container" id="top"
      style="height: 100%; min-height: 740px!important">
+<!-- <div class="w3-display-container" id="top"
+     style="height: 100%; min-height: 740px!important">
+  <img src="bg/handen.jpg" class="parallax" style="position: absolute; top: 0; left: 0; z-index: -100" alt="handen"> -->
 
   <div class="w3-display-bottommiddle w3-black w3-padding w3-round-xxlarge w3-card topform" style="margin-bottom: 2vh">
     <p class="w3-large w3-hide-small w3-hide-medium">Individuele begeleiding, training en instructie bij dyslexie, dyscalculie en AD(H)D volgens de Davis®-methode</p>
@@ -109,6 +112,7 @@
   <div id="welkom" style="position: relative; margin-top: -100px; margin-bottom: 100px"></div>
   <div class="w3-row">
     <div class="w3-half">
+      <!--#include file="ssi/iphone.html" -->
       <h3>Welkom bij Tools2c</h3>
       <p>Ben je op deze site omdat jij problemen hebt met taal, rekenen of gedrag? Of zoek je hulp voor je kind? Dan ben je hier op de goede plek. <b>Davis® Counseling</b> kan leer- en gedragsproblemen oplossen.</p>
       <p>Davis® Counseling is een afwisselend programma van vijf tot acht dagen dat <b>meteen resultaat</b> geeft. Davis Counseling legt een <b>stevige basis voor het leren en het leven</b>. Je zelfvertrouwen krijgt een boost en er ontstaat weer ruimte om te leren.</p>
@@ -120,7 +124,8 @@
 		  <p>Met de Davis-methode leer je om de voordelen, <b>de talenten</b> die in jouw manier van denken verscholen liggen <b>tot bloei</b> te laten komen. Je krijgt <b>controle</b> over jouw manier van denken en daardoor <b>verdwijnen</b> dyslectische symptomen.</p>
 	  <p>
     <div id="astrid" style="position: relative; margin-top: -110px; margin-bottom: 130px;"></div>
-  	<div class="bg-astrid-hek" style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%;">&nbsp;</div>
+  	<!-- <div class="bg-astrid-hek" style="width: 100%; height: 10em; background-size: cover; background-position: 50% 44%;">&nbsp;</div> -->
+    <img src="bg/astrid-hek.jpg" style="width: 100%; height: 10em; object-fit: cover; object-position: 50% 20%" alt="Astrid Toorop">
 	  <div id="overmij" class="accordion" onclick="accordion(this)">
       Over mij
     </div>
@@ -173,7 +178,9 @@
 </div>
 
 <!-- boog -->
-<div class="w3-display-container stilbeeld centerContainer bgimg bg-boog lazybg">
+<!-- <div class="w3-display-container stilbeeld centerContainer bgimg bg-boog lazybg"> -->
+<div class="w3-display-container stilbeeld centerContainer" style="min-height: 100%">
+  <img src="bg/boog.jpg" class="parallax" style="position: absolute; top: 0; left: 0; z-index: -100" loading="lazy" alt="bruggetje">
 
   <div class="w3-content w3-black w3-round-xxlarge w3-container w3-padding-24 centerChild topform fifty">
 
@@ -354,7 +361,7 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 <!-- Poemeltje -->
-<video id="poemeltje" poster="video/poemeltje.jpg" autoplay muted loop class="w3-display-container">
+<video class="parallax" id="poemeltje" poster="video/poemeltje.jpg" autoplay autoPlay muted loop playsinline playsInline class="w3-display-container">
   <source src="video/poemeltje.mp4" type="video/mp4">
   <source src="video/poemeltje.webm" type="video/webm">
 </video>
@@ -423,8 +430,8 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 
-<div class="w3-display-container stilbeeld bgimg bg-bankje lazybg">
-</div>
+<!-- <div class="w3-display-container stilbeeld bgimg bg-bankje lazybg"></div> -->
+<img src="bg/op-bankje.jpg" class="parallax" loading="lazy" alt="balanceren op een bankje">
 
 <!-- orienteren - ontspannen - energie doseren -->
 <!--
@@ -525,15 +532,10 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 </div>
 
 <!-- brug -->
-<div class="w3-display-container stilbeeld bgimg bg-handen">
-</div>
+<!-- <div class="w3-display-container stilbeeld bgimg bg-handen"></div> -->
+<img src="bg/handen.jpg" class="parallax" loading="lazy" alt="handen">
+
 <!-- Dyslexie -->
-<div class="w3-display-container w3-card-4 quoteblok" id="stoornis">
-  <div class="w3-container w3-content w3-padding-24 w3-row">
-    Dyslexie is geen stoornis die je hebt of die je bent,
-    het is een manier van leven en leren
-  </div>
-</div>
 <div class="w3-content w3-container w3-padding-24">
   <div id="dyslexie" style="position: relative; margin-top: -100px; margin-bottom: 100px"></div>
   <div class="w3-row">
@@ -599,9 +601,8 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
   </div>
 </div>
 
-<!-- Klok -->
-<div class="w3-display-container stilbeeld centerContainer bgimg bg-gras lazybg">
-</div>
+<!-- <div class="w3-display-container stilbeeld centerContainer bgimg bg-gras lazybg"></div> -->
+<img src="bg/in-gras.jpg" class="parallax" loading="lazy" alt="in het gras">
 
 <!-- Dyscalculie -->
 <div class="w3-display-container w3-card-4 quoteblok">
@@ -686,8 +687,9 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
  </div>
 </div>
 
-<div class="w3-display-container stilbeeld bgimg bg-radslag lazybg">
-</div>
+<!-- <div class="w3-display-container stilbeeld bgimg bg-radslag lazybg"></div> -->
+<img src="bg/radslag.jpg" class="parallax" loading="lazy" alt="radslag">
+
 <!--
 <div class="w3-display-container w3-card-4 quoteblok">
   <div class="w3-container w3-content w3-padding-24 w3-row">
@@ -938,9 +940,9 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
 <!-- ****************** einde modals ******************* -->
 
 <!-- Astrid bij het hek -->
-<div class="w3-display-container stilbeeld bgimg bg-astrid-hek">
-  <div style="position: absolute; bottom: 50px" id="boom">&nbsp;</div>
-</div>
+<!-- <div class="w3-display-container stilbeeld bgimg bg-astrid-hek"></div> -->
+<img src="bg/astrid-hek.jpg" class="parallax" loading="lazy" alt="Astrid Toorop">
+
 <!--
 <div class="w3-content w3-container w3-padding-24">
   <div class="w3-row">
@@ -974,8 +976,22 @@ Een volwassen dyslecticus beschikt vaak over een groot repertoire van zulke stra
   </div>
 </footer>
 <script>
+
+var toParallax = [];
+
+function parallax(elem) {
+  const box = elem.getBoundingClientRect();
+  if (box.bottom < 0)
+    return 1;
+  else if (box.top > window.innerHeight)
+    return 0;
+  elem.style.objectPosition = "center " + (0 - box.top) + "px";
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
   var lazybgs = [].slice.call(document.querySelectorAll(".lazybg"));
+  var parallaxes = [].slice.call(document.querySelectorAll(".parallax"));
 
   if ("IntersectionObserver" in window) {
     let lazybgObserver = new IntersectionObserver(function(entries, observer) {
@@ -989,6 +1005,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     lazybgs.forEach(function(lazybg) {
       lazybgObserver.observe(lazybg);
+    });
+
+    let parallaxObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          parallax(entry.target);
+          toParallax.push(entry.target);
+        } else {
+          let i = toParallax.indexOf(entry.target);
+          if (i >= 0) {
+            toParallax.splice(i, 1);
+          }
+        }
+      });
+    });
+
+    parallaxes.forEach(function(p) {
+      parallaxObserver.observe(p);
     });
   }
 });
@@ -1006,7 +1040,6 @@ var topKnop2 = document.getElementById("topKnop2");
 var contactKnop2 = document.getElementById("contactKnop2");
 
 var pagetwo = document.getElementById("paginatwee");
-var stoornis = document.getElementById("stoornis");
 
 var modal = document.getElementById('concepten');
 
@@ -1096,13 +1129,13 @@ function VerhaalRonDavis() {
 }
 
 function scrollFunction() {
+  toParallax.forEach(parallax);
   if (window.pageYOffset >= sticky) {
     logo.style.width = "80px";
     logo.style.marginTop = "-10px";
     navbarcont.style.position ="fixed";
     navbar.style.marginTop = "0px";
     knoppen.style.marginLeft = "90px";
-    const bottom = stoornis.getBoundingClientRect().bottom;
     const bottom2 = pagetwo.getBoundingClientRect().bottom;
     if (bottom2 < 150) {
         w3show(contactKnop)
@@ -1261,7 +1294,7 @@ var sherpa        = document.getElementById("sherpa");
 var kind          = document.getElementById("kind");
 var sherpaimg     = document.getElementById("sherpaimg");
 var schaduw         = document.getElementById("schaduw");
-var poemeltje     = document.getElementById("poemeltje");
+// var poemeltje     = document.getElementById("poemeltje");
 var station       = document.getElementById("station");
 var peinzende     = document.getElementById("peinzende-kinderen");
 
@@ -1296,7 +1329,6 @@ function rellaxAll() {
   }
   if (null !== jongetje  && null !== taal_beeld) relScroll(jongetje, taal_beeld);
   if (null !== sherpaimg && null !== kind)       relScroll(sherpaimg, kind);
-  if (null !== poemeltje)       parallax(poemeltje);
 }
 
 </script>

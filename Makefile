@@ -52,7 +52,7 @@ bg/radslag.jpg: originelen/radslag.jpg
 $(ACHTERGRONDEN):
 	convert "$<" -resize x$(BG_HEIGHT) -quality $(BG_QUALITY) "$@"
 
-bg/astrid-hek.jpg: originelen/IMG_20200508_174605.jpg
+bg/astrid-hek.jpg: originelen/astrid-hek.png
 	convert "$<" -resize 768x -quality 90 "$@"
 
 img/concept-mastery-verandering.jpg: originelen/Concept\ Mastery\ Verandering.jpg
