@@ -33,7 +33,7 @@ table { border-spacing: 0; }
 .w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
 .w3-black,.w3-hover-black:hover{color:#fff!important;}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
-
+.w3-text-red,.w3-hover-text-red:hover{color:#f44336!important}
 .bg-donkergroen,.bg-donkergroen:hover{color:#fff!important;background-color:#030!important}
 #navbar {
   /* background-image: url('balk-groen.png'); */
