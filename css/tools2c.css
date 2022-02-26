@@ -225,6 +225,9 @@ div#gereedschap:hover .titlijn {
   border-bottom: solid 2px white;
 }
 
+a.tools2c-link       { color: green; text-decoration: none; border-bottom: solid 1px green; margin-bottom: 1px; }
+a.tools2c-link:hover { border-bottom: solid 2px green; margin-bottom: 0px; }
+
 .w3-modal .naw-link a:hover {
   border-bottom: solid 2px green;
 }

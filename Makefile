@@ -11,7 +11,7 @@ FOTOS = img/concept-mastery-verandering.jpg img/sm-de.jpg
 TEKENINGEN_BREED = img/ezelsbrug.png img/gids.png img/trein.png \
 		img/perron.png img/jongen-in-trein.png img/ron-davis.png \
 		img/out-of-the-box.png img/peinzende-kinderen.png \
-		img/schaduw.png img/in-de-verte.png
+		img/schaduw.png img/in-de-verte.png img/wadoe.png
 ZELFDE_GROOTTE = img/rietje.png img/rechthoek.png img/cirkel.png img/half.png \
 		img/breuk.png img/eentweede.png img/nulkommavijf.png \
 		img/vijftigprocent.png img/taartje.png img/groei.png
@@ -88,6 +88,7 @@ img/out-of-the-box.png: originelen/out\ of\ the\ box.png
 img/peinzende-kinderen.png: originelen/peinzende\ kinderen.png
 img/schaduw.png: originelen/schaduw.png
 img/in-de-verte.png: originelen/In\ de\ verte\ tekening.png
+img/wadoe.png: originelen/wadoe.png
 $(TEKENINGEN_BREED):
 	convert "$<" -scale $(COL_WIDTH) -quality 91 -depth 4 -colorspace gray "$@"
 
