@@ -1,5 +1,5 @@
 <?php 
-  if (mail( "astrid@tools2c.nl"
+  if (mail( "astrid-en-willem@tools2c.nl"
           , "Tools2C msg van " . $_POST["Naam"] . " <" . $_POST["E-mail"] . ">"
           , "Van    : " . $_POST["Naam"] . "\r\n"
           . "E-mail : " . $_POST["E-mail"] . "\r\n"
